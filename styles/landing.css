@@ -1,5 +1,132 @@
 body {
   height : 1000vh;
-  background-color : #242323;
+  background-color : #1E1E1E;
   color : #F5ECEA;
+  padding: 0px;
+  margin: 0px;
+  border : 0px;
+  
+}
+
+p {
+  margin : 0px;
+  padding : 0px;
+}
+
+header {
+  display : flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background-color: #272424;
+  position: fixed;
+  height : 50px;
+  width : 100vw;
+  font-family: "Orelega One", serif;
+  font-size: 22px;
+}
+
+.header-space {
+  flex-shrink: 100;
+  flex : 1;
+}
+
+.logo-container {
+  flex-shrink: 0;
+  width : 150px;
+  height : 35px;
+  background: linear-gradient(90deg, 
+  rgb(185, 0, 0) 0%, 
+  rgb(209, 1, 1) 16%, 
+  rgb(234, 35, 0) 27%, 
+  rgb(214, 100, 0) 46%, 
+  rgb(255, 221, 0) 68%); 
+  margin: 0vh 1vw;
+  display : flex;
+  align-items: center;
+  justify-content: center;
+  -webkit-mask-image: url("../imgs/landing-page/Logo.svg");
+  -webkit-mask-size : 20vw 35px;
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+}
+
+.news {
+  margin : 0px 1vw;
+}
+
+.article {
+  margin : 0vh 1vw;
+}
+
+.favorite {
+  margin : 0px 1vw;
+  display : flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.star {
+  height : 3vh;
+  margin : 0vh 0.5vw;
+  bottom : 0px;
+}
+
+.account {
+  width : 135px;
+  height : 21px;
+  position: relative;
+  color : #272424;
+  margin : 0px 0.5vw;
+  padding : 7px 0.2vw;
+  border-radius: 15px;
+  background: rgb(252,0,0);
+  background: linear-gradient(270deg, 
+  rgba(252,0,0,1) 0%, 
+  rgba(255,62,62,1) 16%, 
+  rgb(199, 15, 2) 27%, 
+  rgb(234, 86, 0) 46%, 
+  rgb(255, 136, 0) 68%); 
+  z-index: -1;
+}
+
+.account-background {
+  padding: 0 2px 0 0.2vw;
+  color : white;
+  justify-content: center;
+  align-items: center;
+  display : flex;
+  flex-direction: row;
+  position : absolute;
+  top : 0px;
+  left : 0px;
+  right : 0px;
+  bottom : 0px;
+  border-radius: 15px;
+  margin : 1px;
+  background-color: #272424;
+}
+
+.account-text {
+  background: linear-gradient(270deg, 
+  rgba(252,0,0,1) 0%, 
+  rgba(255,62,62,1) 16%, 
+  rgb(234, 86, 0) 46%, 
+  rgb(255, 136, 0) 68%); 
+  -webkit-background-clip : text;
+  -webkit-text-fill-color : transparent;
+}
+
+.account-logo {
+  background: linear-gradient(90deg, 
+  rgba(252,0,0,1) 0%, 
+  rgb(205, 0, 0) 55%, 
+  rgb(148, 1, 1) 80%);
+  width : 30px;
+  height : 30px;
+  z-index : 2;
+  -webkit-mask-image: url("../imgs/landing-page/account-logo.svg");
+  -webkit-mask-size : 30px 23px;
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-position: center;
 }
