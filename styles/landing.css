@@ -115,6 +115,11 @@
   bottom : 0px;
 }
 
+.account-container:hover {
+  cursor : pointer;
+  animation : 150ms ease-in expand both;
+}
+
 .account {
   width : 135px;
   height : 21px;
@@ -129,19 +134,15 @@
   rgba(255,62,62,1) 16%, 
   rgb(199, 15, 2) 27%, 
   rgb(234, 86, 0) 46%, 
-  rgb(255, 136, 0) 68%); 
+  rgb(255, 136, 0) 68%);
   z-index: -1;
   transition: all 150ms ease-in;
 }
 
-.account:hover {
-  cursor : pointer;
-  animation : 150ms ease-in expand both;
-}
+
 
 .account-background {
   padding: 0 2px 0 0.2vw;
-  color : white;
   justify-content: center;
   align-items: center;
   display : flex;
@@ -179,3 +180,4 @@
   -webkit-mask-repeat: no-repeat;
   -webkit-mask-position: center;
 }
+
