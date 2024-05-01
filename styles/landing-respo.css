@@ -1,0 +1,25 @@
+@media (max-width : 640px) {
+  .hamburger-menu {
+    display :block;
+  }
+  
+  .logo-container {
+    margin-left : 50px;
+  }
+
+  .account-text {
+    display : none;
+  }
+  .account {
+    width : 40px;
+    height : 25px;
+  }
+
+  .fav-text {
+    display : none;
+  }
+
+  .menu-option {
+    display : none;
+  }
+}
