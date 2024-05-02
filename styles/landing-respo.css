@@ -1,3 +1,5 @@
+/* Responsive blur */
+
 @media (max-width : 830px) {
   :root{
     --blur1-width : 775px;
@@ -15,6 +17,8 @@
     --blur4-width : 1188;
   }
 }
+
+/* Responsive display menu hamburger + disparition menu*/
 
 @media (max-width : 640px) {
   
@@ -45,6 +49,37 @@
   .hamburger-container {
     display : block;
   }
+
+  .section2-container {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .section2-right-container {
+    background-color: red;
+    height : 300px;
+    width : 300px;
+  }
+
+  .section2-right-container-row {
+    display : none;
+  }
+
+  .section2-right-container-col{
+    display : flex;
+  }
+
+  .recommended-artist {
+    display : flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .section2-title {
+    padding-top : 2vh;
+  }
+
 }
 
 @media (min-width : 641px) {
@@ -57,5 +92,21 @@
     display : none;
   }
 
+  .section2-right-container-row{
+    display : flex;
+  }
+
+  .section2-right-container-col {
+    display : none;
+  }
   
+}
+
+/* Responsive Photo Luther + Titre */
+
+@media (max-width : 980px) {
+  .luther-photo {
+    margin-top : 3vw;
+    width : clamp(60vw, 80vw, 85vw);
+  }
 }

@@ -1,9 +1,13 @@
+
+/* Variables */
 :root {
   --fs-xl1 : clamp(1.5rem, 2.5vw + 1rem, 3rem);
   --fs-xl2 : clamp(1.5rem, 3vw + 1rem, 3rem);
   --fs-medium1 : clamp(1rem, 1vw + 1rem, 2rem);
+  --fs-text1 : clamp(0.5rem, 1vw + 0.5rem, 1.3rem)
 }
 
+/* Header */
 .first-menu-line {
   position: relative;
   display : flex;
@@ -15,6 +19,7 @@
   width : 100vw;
 }
 
+/* Lignes menu responsif */
 .menu-lines1 {
   height : 50px;
   width : 100%;
@@ -41,6 +46,8 @@
   align-items: center;
 }
 
+
+/* Menu Hamburger */
 .hamburger-container {
   display  : none;
   width : 25px;
@@ -118,6 +125,7 @@
 }
 
 
+/* Menu desktop responsif*/
 .menu-option {
   transition: all 150ms ease-in;
 }
@@ -152,16 +160,15 @@
   -webkit-mask-position: center;
 }
 
-.news {
-  margin : 0px 1vw;
+.logo-container:hover {
+  cursor : pointer;
 }
 
-.article {
-  margin : 0vh 1vw;
+.news, .article, .favorite {
+  margin : 0px 1vw;
 }
 
 .favorite {
-  margin : 0px 1vw;
   display : flex;
   flex-direction: row;
   align-items: center;
@@ -206,8 +213,6 @@
   transition: all 150ms ease-in;
 }
 
-
-
 .account-background {
   
   padding: 0 2px 0 0.2vw;
@@ -250,6 +255,7 @@
 }
 
 
+/* Section 1*/
 .hero {
   position: relative;
   padding-top : 50px;
@@ -283,35 +289,48 @@
 
 
 .blur1 {
+  opacity :0;
+  transition: opacity 100ms;
   position: absolute;
   width : var(--blur1-width);
   z-index: -2;
   margin-left : -15vw;
   margin-bottom : -26vh;
+  animation: 600ms ease-in 800ms 1 forwards appear;
 }
 
 .blur2{
+  opacity :0;
+  transition: opacity 100ms;
   position: absolute;
   width : var(--blur2-width);
   z-index: -1;
   margin-bottom : -23vh;
   margin-right : 0vw;
+  animation: 600ms ease-in 1650ms 1 forwards appear;
 }
 
 .blur3 {
+  opacity :0;
+  transition: opacity 100ms;
   width : var(--blur3-width);
   position: absolute;
   margin-top :-10vh;
   margin-left : -35vw;
   z-index: -4;
+  animation: 600ms ease-in 1300ms 1 forwards appear;
+  
 }
 
 .blur4 {
+  opacity :0;
+  transition: opacity 100ms;
   width : var(--blur4-width);
   position: absolute;
   z-index: -3;
   margin-top : 0vh;
   margin-right : -16vw;
+  animation: 600ms ease-in 500ms 1 forwards appear;
 }
 
 .discover-button {
@@ -326,10 +345,108 @@
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(6.1px);
   -webkit-backdrop-filter: blur(6.1px);
+  text-decoration: none;
 }
 
 .discover-button:hover {
   cursor : pointer;
   animation : 150ms ease-in both expand;
 }
+
+/* Section 2 */
+
+.recommended-artist {
+  margin-top : 12vh;
+  padding : 0vh 3vw;
+}
+
+.recommended-artist p {
+  padding-bottom: 6em;
+  padding-bottom: 2vh;
+}
+
+.section2-title {
+  padding-top : 10vh;
+  font-size: var(--fs-xl1);
+}
+
+.section2-container {
+  display : flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  color : #F5ECEA;
+  font-family: "Lato", sans-serif;
+}
+
+.section2-left-container {
+  width : 66vw;
+  display : flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size : var(--fs-text1);
+  flex : 1;
+
+}
+
+.section2-right-container-row {
+  flex : 1;
+  display : flex;
+  flex-direction: column;
+  align-items:center;
+  justify-content: center;
+  position: relative;
+}
+
+.section2-right-container-col {
+  display : none;
+  flex : 1;
+  display : flex;
+  flex-direction: column;
+  align-items:center;
+  justify-content: center;
+}
+
+.section2-right-container-row > .photo-container {
+  position : absolute;
+  margin-top : -15vw;
+  top : 0;
+}
+
+.photo-container {
+  display : flex;
+  flex-direction: column;
+  align-items:center;
+  justify-content: center;
+}
+
+.luther-photo {
+  width : clamp(50vw, 70vw, 90vw);
+}
+
+.luther-photo-bio {
+  text-transform: uppercase;
+  margin-top: -19vw;
+  font-weight: bolder;
+  font-size: var(--fs-xl1);
+}
+
+.luther-discover {
+  margin-top: 5vh;
+  font-weight: bold;
+  padding : 7px 13px;
+  border-radius: 2vw;
+  background: rgba(251, 69, 227, 0.34);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(6.1px);
+  -webkit-backdrop-filter: blur(6.1px);
+  text-decoration: none;
+}
+
+.luther-discover:hover {
+  cursor : pointer;
+  animation : 150ms ease-in both expand;
+}
+
 

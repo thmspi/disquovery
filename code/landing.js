@@ -1,10 +1,6 @@
 const container = document.getElementsByClassName("favorite")[0];
 const star = document.getElementsByClassName("star")[0];
 const fav = document.getElementsByClassName("fav-text")[0];
-const hamburgerMenu = document.getElementsByClassName("hamburger-menu")[0];
-const hidedSection = document.getElementsByClassName("hided-menu-lines")[0];
-
-var hamburgerMenuDisplayed = 0;
 
 
 container.addEventListener("mouseover", ()=> 
@@ -60,4 +56,5 @@ container.addEventListener("mouseout", ()=> {
     fill : "both",
   }
 );
-})
+}
+)
