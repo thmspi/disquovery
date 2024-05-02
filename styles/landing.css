@@ -8,43 +8,18 @@
 }
 
 /* Header */
-body {
-  height : 1000vh;
-  background-color : #1E1E1E;
-  color : #666666;
-  padding: 0px;
-  margin: 0px;
-  border : 0px;
-  
-}
-
-p {
-  margin : 0px;
-  padding : 0px;
-}
-
-header {
+.first-menu-line {
   position: relative;
   display : flex;
   flex-direction:row;
   align-items: center;
   justify-content: center;
-  background-color: #272424;
-  position: fixed;
   height : 50px;
   background-color: #272424;
   width : 100vw;
 }
 
-.hided-menu-lines {
-  width : 100vw;
-  display  : flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  display : none;
-}
-
+/* Lignes menu responsif */
 .menu-lines1 {
   height : 50px;
   width : 100%;
@@ -71,17 +46,82 @@ header {
   align-items: center;
 }
 
-.hamburger-menu {
-  display : none;
-  position : absolute;
-  left : 10px;
-  top : 12px;
-  height :  25px;
+
+/* Menu Hamburger */
+.hamburger-container {
+  display  : none;
+  width : 25px;
+  position: absolute;
+  top: 9px;
+  left: 10px;
+  color: #F5ECEA;
+  transition: transform 0.5s ease;
 }
 
-.hamburger-menu:hover {
-  animation : 150ms expand ease-in both;
-  cursor : pointer;
+.hamburger-container .checkbox {
+  opacity: 0;
+  position: absolute;
+}
+
+.hamburger-container .checkbox:checked ~ .drawer a {
+  visibility: visible;
+
+}
+
+.hamburger-container .drawer a {
+  visibility: hidden;
+  transition: visibility 0.5s linear;
+}
+
+.hamburger-container .checkbox:checked ~ .drawer {
+  transform: translateX(0%);
+}
+
+.hamburger-container .checkbox:checked ~ .hamburger .slice:nth-child(1) {
+  transform: translateY(10px) rotate(45deg);
+}
+
+.hamburger-container .checkbox:checked ~ .hamburger .slice:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger-container .checkbox:checked ~ .hamburger .slice:nth-child(3) {
+  transform: translateY(-10px) rotate(-45deg);
+}
+
+.hamburger {
+  width: 25px;
+  height: 25px;
+  position: relative;
+  display: block;
+  transition: transform 0.5s ease;
+  z-index: 1;
+  cursor: pointer;
+  padding-top: 5px;
+}
+
+.hamburger .slice {
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: white;
+  transition: all 0.5s ease;
+}
+
+.hamburger .slice:not(:first-child) {
+  margin-top: 8px;
+}
+
+.drawer {
+  z-index: -1;
+  position: fixed;
+  left: 0;
+  top: 50px;
+  width: max-content;
+  width: 100vw;
+  background: #272424;
+  transform: translateY(-150%);
+  transition: transform 0.5s ease;
 }
 
 
@@ -115,7 +155,7 @@ header {
   align-items: center;
   justify-content: center;
   -webkit-mask-image: url("../imgs/landing-page/Logo.svg");
-  -webkit-mask-size : 20vw 35px;
+  -webkit-mask-size : 150px 35px;
   -webkit-mask-repeat: no-repeat;
   -webkit-mask-position: center;
 }
@@ -136,7 +176,7 @@ header {
 }
 
 .favorite:hover {
-  cursor :
+  cursor : pointer;
 }
 
 .star {
@@ -171,11 +211,6 @@ header {
   rgb(255, 136, 0) 68%);
   z-index: -1;
   transition: all 150ms ease-in;
-}
-
-.account:hover {
-  cursor : pointer;
-  animation : 150ms ease-in expand both;
 }
 
 .account-background {
