@@ -8,12 +8,18 @@ body {
   
 }
 
+ul {
+  padding: 0px;
+  margin: 0px;
+}
+
 p {
   margin : 0px;
   padding : 0px;
 }
 
 header {
+  z-index: 1000;
   display :flex;
   flex-direction: column;
   align-items: center;
@@ -22,4 +28,9 @@ header {
   position: fixed;
   font-family: "Orelega One", serif;
   font-size: 22px;
+}
+
+@font-face {
+  font-family: Giovanetta;
+  src: url("../fonts/Giovanetta-1fd3.woff");
 }

@@ -1,7 +1,22 @@
-@media (max-width : 640px) {
-  .hamburger-menu {
-    display :block;
+@media (max-width : 830px) {
+  :root{
+    --blur1-width : 775px;
+    --blur2-width : 503px;
+    --blur3-width : 696px;
+    --blur4-width : 891px;
   }
+}
+
+@media (min-width : 831px) {
+  :root{
+    --blur1-width : 1034px;
+    --blur2-width : 671px;
+    --blur3-width : 928px;
+    --blur4-width : 1188;
+  }
+}
+
+@media (max-width : 640px) {
   
   .logo-container {
     margin-left : 50px;
@@ -22,4 +37,25 @@
   .menu-option {
     display : none;
   }
+  .discover-button  {
+    padding : 5px 10px;
+    border-radius: 20px;
+  }
+
+  .hamburger-container {
+    display : block;
+  }
+}
+
+@media (min-width : 641px) {
+  .discover-button  {
+    padding : 10px 15px;
+    border-radius: 16px;
+  }
+
+  .hamburger-container {
+    display : none;
+  }
+
+  
 }

@@ -61,15 +61,3 @@ container.addEventListener("mouseout", ()=> {
   }
 );
 })
-
-hamburgerMenu.addEventListener("click", toggleDisplay);
-
-function toggleDisplay() {
-  if (hamburgerMenuDisplayed == 1) {
-    hamburgerMenuDisplayed = 0;
-    hidedSection.style.display = "none";
-  } else {
-    hamburgerMenuDisplayed = 1;
-    hidedSection.style.display = "block";
-  }
-}

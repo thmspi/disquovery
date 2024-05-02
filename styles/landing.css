@@ -1,19 +1,18 @@
+:root {
+  --fs-xl1 : clamp(1.5rem, 2.5vw + 1rem, 3rem);
+  --fs-xl2 : clamp(1.5rem, 3vw + 1rem, 3rem);
+  --fs-medium1 : clamp(1rem, 1vw + 1rem, 2rem);
+}
+
 .first-menu-line {
+  position: relative;
   display : flex;
-  flex-direction: row;
+  flex-direction:row;
   align-items: center;
   justify-content: center;
   height : 50px;
+  background-color: #272424;
   width : 100vw;
-}
-
-.hided-menu-lines {
-  width : 100vw;
-  display  : flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  display : none;
 }
 
 .menu-lines1 {
@@ -42,18 +41,82 @@
   align-items: center;
 }
 
-.hamburger-menu {
-  display : none;
-  position : absolute;
-  left : 10px;
-  top : 12px;
-  height :  25px;
+.hamburger-container {
+  display  : none;
+  width : 25px;
+  position: absolute;
+  top: 9px;
+  left: 10px;
+  color: #F5ECEA;
+  transition: transform 0.5s ease;
 }
 
-.hamburger-menu:hover {
-  animation : 150ms expand ease-in both;
-  cursor : pointer;
+.hamburger-container .checkbox {
+  opacity: 0;
+  position: absolute;
 }
+
+.hamburger-container .checkbox:checked ~ .drawer a {
+  visibility: visible;
+
+}
+
+.hamburger-container .drawer a {
+  visibility: hidden;
+  transition: visibility 0.5s linear;
+}
+
+.hamburger-container .checkbox:checked ~ .drawer {
+  transform: translateX(0%);
+}
+
+.hamburger-container .checkbox:checked ~ .hamburger .slice:nth-child(1) {
+  transform: translateY(10px) rotate(45deg);
+}
+
+.hamburger-container .checkbox:checked ~ .hamburger .slice:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger-container .checkbox:checked ~ .hamburger .slice:nth-child(3) {
+  transform: translateY(-10px) rotate(-45deg);
+}
+
+.hamburger {
+  width: 25px;
+  height: 25px;
+  position: relative;
+  display: block;
+  transition: transform 0.5s ease;
+  z-index: 1;
+  cursor: pointer;
+  padding-top: 5px;
+}
+
+.hamburger .slice {
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: white;
+  transition: all 0.5s ease;
+}
+
+.hamburger .slice:not(:first-child) {
+  margin-top: 8px;
+}
+
+.drawer {
+  z-index: -1;
+  position: fixed;
+  left: 0;
+  top: 50px;
+  width: max-content;
+  width: 100vw;
+  background: #272424;
+  transform: translateY(-150%);
+  transition: transform 0.5s ease;
+}
+
 
 .menu-option {
   transition: all 150ms ease-in;
@@ -115,6 +178,10 @@
   bottom : 0px;
 }
 
+.account-container {
+  z-index: 10;
+}
+
 .account-container:hover {
   cursor : pointer;
   animation : 150ms ease-in expand both;
@@ -142,6 +209,7 @@
 
 
 .account-background {
+  
   padding: 0 2px 0 0.2vw;
   justify-content: center;
   align-items: center;
@@ -179,5 +247,89 @@
   -webkit-mask-size : 30px 23px;
   -webkit-mask-repeat: no-repeat;
   -webkit-mask-position: center;
+}
+
+
+.hero {
+  position: relative;
+  padding-top : 50px;
+  height : 100vh;
+  display : flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.first-row-text, .second-row-text {
+  color : #F5ECEA;
+  font-size: var(--fs-xl1);
+  font-family: "Lato", sans-serif;
+  font-weight: bold;
+}
+
+.first-row-text {
+  margin-left: -2.5vw;
+}
+
+.second-row-text {
+  margin-left : 2.5vw;
+}
+
+.special-text {
+  font-family: Giovanetta;
+  font-size: var(--fs-xl2);
+  font-weight: normal;
+}
+
+
+.blur1 {
+  position: absolute;
+  width : var(--blur1-width);
+  z-index: -2;
+  margin-left : -15vw;
+  margin-bottom : -26vh;
+}
+
+.blur2{
+  position: absolute;
+  width : var(--blur2-width);
+  z-index: -1;
+  margin-bottom : -23vh;
+  margin-right : 0vw;
+}
+
+.blur3 {
+  width : var(--blur3-width);
+  position: absolute;
+  margin-top :-10vh;
+  margin-left : -35vw;
+  z-index: -4;
+}
+
+.blur4 {
+  width : var(--blur4-width);
+  position: absolute;
+  z-index: -3;
+  margin-top : 0vh;
+  margin-right : -16vw;
+}
+
+.discover-button {
+  margin-top : 30px;
+  color : #F5ECEA;
+  background-color: #C00000;
+  font-style: italic;
+  font-weight: bold;
+  font-family: Lato;
+  font-size: var(--fs-medium1);
+  background: rgba(255, 255, 255, 0.34);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(6.1px);
+  -webkit-backdrop-filter: blur(6.1px);
+}
+
+.discover-button:hover {
+  cursor : pointer;
+  animation : 150ms ease-in both expand;
 }
 

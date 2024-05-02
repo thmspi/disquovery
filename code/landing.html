@@ -6,6 +6,9 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Orelega+One&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
   <link rel = "stylesheet" href = "../styles/landing.css" >
   <link rel = "stylesheet" href = "../styles/general.css" >
   <link rel = "stylesheet" href = "../styles/animation.css" >
@@ -15,7 +18,20 @@
 <body>
   <header>
     <div class = "first-menu-line">
-      <img src = "../imgs/landing-page/hambergur logo.svg" class = "hamburger-menu">
+      <div class="hamburger-container">
+        <input class="checkbox" type="checkbox" id="hamburger-toggle" aria-label="Toggle Navigation"/>
+        <label class="hamburger" for="hamburger-toggle">
+          <span class="slice"></span>
+          <span class="slice"></span>
+          <span class="slice"></span>
+        </label>
+        <div class = "drawer">
+          <ul class = "option-container">
+            <li class = "menu-lines1">Nouveautés</li>
+            <li class = "menu-lines2">Articles</li>
+          </ul>
+        </div>
+      </div>
       <div class = "logo-container">
       </div>
       <div class = "header-space"></div>
@@ -26,7 +42,7 @@
         <p class = "menu-option">Articles</p>
       </div>
       <div class = "favorite">
-        <p class = "fav-text">Favorite</p>
+        <p class = "fav-text">Favoris</p>
         <img src = "../imgs/landing-page/star.svg" class = "star">
       </div>
       <div class = "account-container">
@@ -38,15 +54,18 @@
         </div>
       </div>
     </div>
-    <div class = "hided-menu-lines">
-      <div class = "menu-lines1">
-        <p>Nouveautés</p>
-      </div>
-      <div class = "menu-lines2">
-        <p>Articles</p>
-      </div>
-    </div>
   </header>
+  <section class = "hero">
+    <p>
+      <span class = "first-row-text">Découvrez <span class = "special-text">Vos </span>nouveaux artistes</span><br>
+      <span class = "second-row-text">favoris via <span class = "special-text">Nos</span> recommandations</span>
+    </p>
+    <img src = "../imgs/landing-page/1-BL-orange-blur.png" class = "blur1">
+    <img src = "../imgs/landing-page/1-BR-orange-blur.png" class = "blur2">
+    <img src = "../imgs/landing-page/1-TL-red-blur.png" class = "blur3">
+    <img src = "../imgs/landing-page/1-TR-yellow-blur.png" class = "blur4">
+    <div class = "discover-button">Commencer</div>
+  </section>
   <script src = "landing.js"></script>
 </body>
 </html>
