@@ -125,3 +125,13 @@
     width : clamp(60vw, 80vw, 85vw);
   }
 }
+
+/* Responsive carroussel*/
+
+@media (min-width : 801px) and (max-width : 945px) {
+  .card-caroussel .slider .card .text-container-card{
+    justify-content: start;
+    margin-bottom: 10px;
+
+  }
+}

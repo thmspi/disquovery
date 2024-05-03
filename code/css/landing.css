@@ -456,6 +456,15 @@
 
 /* Caroussel */
 
+.center-title {
+  display : flex;
+  justify-content: center;
+}
+
+.section3-title {
+  font-size: var(--fs-medium1);
+}
+
 .artist-history {
   width : 100vw;
   background-color: #181717;

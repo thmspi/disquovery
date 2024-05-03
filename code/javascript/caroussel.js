@@ -38,7 +38,7 @@ function setParams() {
       slidePerPage = 3;
       currentMargin = (window.innerWidth/100)*1.5;
   }
-  slider.style.marginLeft = -((cardList[0].offsetWidth+2*currentMargin)*(currentPosition));
+  slider.style.marginLeft = -((cardList[0].offsetWidth+2*currentMargin)*(currentPosition))+"px";
 
 }
 
