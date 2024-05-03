@@ -6,7 +6,8 @@ const account = document.getElementsByClassName("account")[0];
 const accountText = document.getElementsByClassName("account-text")[0];
 const accountLogo = document.getElementsByClassName("account-logo")[0];
 
-
+//-1844
+//-2400
 window.addEventListener("scroll", coordinate);
 var Tappeared = 0;
 function coordinate() {
@@ -55,9 +56,18 @@ function coordinate() {
     accountText.style.backgroundColor = "#0079C8";
     accountLogo.style.backgroundColor = "#0079C8";
     accountText.style.webkitBackgroundClip = "text";
-    
+  } else if (section2.getBoundingClientRect().top < - 2000 && section2.getBoundingClientRect().top > -2700) {
+    logo.style.background = "#ffbfd3";
+    account.style.background = "#ffbfd3";
+    accountText.style.background = "#ffbfd3";
+    accountLogo.style.background = "#ffbfd3";
+    logo.style.backgroundColor = "#ffbfd3";
+    account.style.backgroundColor = "#ffbfd3";
+    accountText.style.backgroundColor = "#ffbfd3";
+    accountLogo.style.backgroundColor = "#ffbfd3";
+    accountText.style.webkitBackgroundClip = "text";
 
-  } else if (section2.getBoundingClientRect().top <-2000) {
+  } else if (section2.getBoundingClientRect().top <-2600) {
     logo.style.background = "white";
     account.style.background = "white";
     accountText.style.background = "white";
