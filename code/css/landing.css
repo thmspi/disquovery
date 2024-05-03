@@ -430,6 +430,7 @@
 }
 
 .luther-photo-bio {
+  display : none;
   text-transform: uppercase;
   margin-top: -19vw;
   font-weight: bolder;
@@ -651,5 +652,78 @@
   transform: scale(1.1);
 }
 
+#section5 {
+  margin-top: 10vw;
+  padding : 0 3vw;
+}
 
+#section5-title {
+  color :#F5ECEA;
+  font-family: "Lato", sans-serif;
+  font-size: var(--fs-xl2);
+  font-weight: bold;
+}
+
+.section5-container {
+  margin-top: 70px;
+  display : flex;
+  flex-direction: row;
+  align-items: start;
+  color :#F5ECEA;
+  font-family: "Lato", sans-serif;
+}
+
+.section5-left-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding : 0 3vw;
+  position: relative;
+}
+
+.section5-left-section > img {
+  width : 40vw;
+  min-width: 200px;
+  
+}
+
+.section5-right-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: var(--fs-text1);
+}
+
+.section5-right-section > p {
+  margin-bottom : 2vw;
+}
+
+.section5-discover-button {
+  padding : 1vw 2vw;
+  border-radius: 15px;
+  background-color: rgb(67, 67, 67);
+  transition : 150ms all ease-in;
+  font-weight: bold;
+  font-size: var(--fs-text1);
+  text-decoration: none;
+  color: #F5ECEA;
+}
+
+.section5-discover-button:hover {
+  cursor : pointer;
+  transform: scale(1.1);
+}
+
+#vald-bio {
+  font-size: var(--fs-xl2);
+  font-weight: bold;
+}
+
+#blur-vald {
+  position : absolute;
+  z-index: -1;
+  width : 70vw;
+}
 

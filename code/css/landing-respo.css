@@ -128,6 +128,10 @@
     margin-top : 3vw;
     width : clamp(60vw, 80vw, 85vw);
   }
+
+  .luther-photo-bio {
+    display : block
+  }
 }
 
 /* Responsive carroussel*/
@@ -158,4 +162,27 @@
   .section4-discover-button {
     margin-top: 30px;
   }
+
+  .section5-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .section5-right-section {
+    margin-top: 30px;
+  }
+
+  .section5-left-section > img {
+    width : 30vw;
+    min-width: 300px;
+  }
+
+  #blur-vald {
+    width : 80vw;
+  }
+
+  .section5-discover-button {
+    margin-top: 30px;
+  }
+
 }
