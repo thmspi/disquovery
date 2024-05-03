@@ -366,6 +366,7 @@
 .recommended-artist p {
   padding-bottom: 6em;
   padding-bottom: 2vh;
+  
 }
 
 .section2-title {
@@ -437,15 +438,14 @@
 
 .luther-discover {
   margin-top: 5vh;
-  font-weight: bold;
-  padding : 7px 13px;
-  border-radius: 2vw;
+  padding : 1vw 2vw;
+  border-radius: 15px;
   background: rgba(251, 69, 227, 0.34);
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(6.1px);
-  -webkit-backdrop-filter: blur(6.1px);
+  transition : 150ms all ease-in;
+  font-weight: bold;
+  font-size: var(--fs-text1);
   text-decoration: none;
-  transition: 150ms all ease-in;
+  color: #F5ECEA;
 }
 
 .luther-discover:hover {
@@ -636,7 +636,15 @@
   transition : 150ms all ease-in;
   font-weight: bold;
   font-size: var(--fs-text1);
+  text-decoration: none;
+  color: #F5ECEA;
 }
+
+.section4-discover-button:visited {
+  text-decoration: none;
+  color: #F5ECEA;
+}
+
 
 .section4-discover-button:hover {
   cursor : pointer;
