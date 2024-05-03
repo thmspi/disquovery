@@ -568,3 +568,80 @@
 .lecteur-spo {
   max-width: 70vw;
 }
+
+/* Section 4 */
+
+#section4 {
+  margin-top : 30vh;
+  color :#F5ECEA;
+  padding : 5vw;
+  font-family: "Lato", sans-serif;
+}
+
+#section4-title {
+  font-style: italic;
+  font-size: var(--fs-xl1);
+}
+
+#section4-punch {
+  font-weight: bold;
+  font-size: var(--fs-xl2);
+  text-align: center;
+}
+
+.section4-title-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.section4-container {
+  margin-top: 70px;
+  display : flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: start;
+}
+
+.section4-left-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding : 0 3vw;
+}
+
+.section4-left-section > img {
+  width : 30vw;
+  min-width: 200px;
+}
+
+.section4-right-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: var(--fs-text1);
+}
+
+.section4-right-section > p {
+  margin-bottom : 2vw;
+}
+
+.section4-discover-button {
+  padding : 1vw 2vw;
+  border-radius: 15px;
+  background-color: rgb(0, 121, 201);
+  transition : 150ms all ease-in;
+  font-weight: bold;
+  font-size: var(--fs-text1);
+}
+
+.section4-discover-button:hover {
+  cursor : pointer;
+  transform: scale(1.1);
+}
+
+
+

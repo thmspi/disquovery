@@ -135,3 +135,23 @@
 
   }
 }
+
+@media (max-width : 750px) {
+  .section4-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .section4-right-section {
+    margin-top: 30px;
+  }
+
+  .section4-left-section > img {
+    width : 30vw;
+    min-width: 300px;
+  }
+
+  .section4-discover-button {
+    margin-top: 30px;
+  }
+}
