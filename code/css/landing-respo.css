@@ -82,6 +82,21 @@
 
 }
 
+@media (max-width : 800px) {
+  .card-caroussel .slider .card {
+    width : 70vw;
+    max-width: 350px;
+    margin : auto 35px;
+  }
+}
+
+@media (min-width : 801px) { 
+  .card-caroussel .slider .card {
+    width : 25vw;
+    margin : auto 1.5vw;
+  }
+}
+
 @media (min-width : 641px) {
   .discover-button  {
     padding : 10px 15px;

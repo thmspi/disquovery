@@ -187,11 +187,12 @@
 
 .account-container {
   z-index: 10;
+  transition : 150ms all ease-in;
 }
 
 .account-container:hover {
   cursor : pointer;
-  animation : 150ms ease-in expand both;
+  transform: scale(1.1);
 }
 
 .account {
@@ -346,17 +347,19 @@
   backdrop-filter: blur(6.1px);
   -webkit-backdrop-filter: blur(6.1px);
   text-decoration: none;
+  transition: 150ms all ease-in;
 }
 
 .discover-button:hover {
   cursor : pointer;
-  animation : 150ms ease-in both expand;
+  transform: scale(1.1);
 }
 
 /* Section 2 */
 
 .recommended-artist {
   margin-top : 12vh;
+  margin-bottom: 250px;
   padding : 0vh 3vw;
 }
 
@@ -442,11 +445,117 @@
   backdrop-filter: blur(6.1px);
   -webkit-backdrop-filter: blur(6.1px);
   text-decoration: none;
+  transition: 150ms all ease-in;
 }
 
 .luther-discover:hover {
   cursor : pointer;
-  animation : 150ms ease-in both expand;
+  transform: scale(1.1);
+
 }
 
+/* Caroussel */
 
+.artist-history {
+  width : 100vw;
+  background-color: #181717;
+  height : 400px;
+  display : grid;
+  place-items: center;
+  vertical-align: center;
+}
+
+.card-caroussel {
+  height : 100%;
+  width : 85vw;
+  max-width: 1400px;
+  position: relative;
+  overflow: hidden;
+  padding : 20px;
+}
+
+.card-caroussel .btn {
+  position: absolute;
+  top : calc(50% - 30px);
+  height : 15px;
+  width : 15px;
+  border-left : solid 8px #696969;
+  border-top : solid 8px #696969;
+  cursor: pointer;
+  z-index: 10;
+
+}
+
+.card-caroussel .btn:hover {
+  transform: scale(1.2);
+}
+
+.card-caroussel .btn.inactive {
+  border-color : #282828;
+}
+
+.card-caroussel .btn:first-of-type {
+  transform: rotate(-45deg);
+  left : 10px
+}
+
+.card-caroussel .btn:last-of-type {
+  transform: rotate(135deg);
+  right : 10px;
+}
+
+.card-caroussel .slider {
+  display : flex;
+  width : 1000%;
+  height : 100%;
+  transition: all 500ms;
+}
+
+.card-caroussel .slider .card{
+  height : 350px;
+  background-color: rgb(66, 66, 66);
+  border-radius: 25px;
+  transition: 150ms all ease-in;
+  transform: scale(0.70);
+  display : flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-caroussel .slider .card.selected{
+  background-color: rgb(226, 223, 223);
+  transform: scale(1);
+}
+
+.card-caroussel .slider .card .img-container-card {
+  height: 70%;
+  overflow-y: hidden;
+}
+
+.card-caroussel .slider .card .img-container-card  img{
+  width : 100%;
+  overflow-y:hidden;
+  border-top-right-radius: 25px;
+  border-top-left-radius: 25px;
+}
+
+.card-caroussel .slider .card .text-container-card {
+  height: 30%;
+  font-family: "Lato", sans-serif;
+  font-size: var(--fs-text1);
+  display : flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.lecteur {
+  margin-top : 30px;
+  display : flex;
+  justify-content: center;
+}
+
+.lecteur-spo {
+  max-width: 70vw;
+}
