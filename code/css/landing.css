@@ -140,7 +140,7 @@
   flex : 1;
 }
 
-.logo-container {
+.logo-container { 
   flex-shrink: 0;
   width : 150px;
   height : 35px;
@@ -158,6 +158,7 @@
   -webkit-mask-size : 150px 35px;
   -webkit-mask-repeat: no-repeat;
   -webkit-mask-position: center;
+  transition: all 150ms ease-in;
 }
 
 .logo-container:hover {
@@ -229,6 +230,7 @@
   border-radius: 15px;
   margin : 1px;
   background-color: #272424;
+  transition: all 150ms ease-in;
 }
 
 .account-text {
@@ -239,6 +241,7 @@
   rgb(255, 136, 0) 68%); 
   -webkit-background-clip : text;
   -webkit-text-fill-color : transparent;
+  transition: all 150ms ease-in;
 }
 
 .account-logo {
@@ -253,6 +256,7 @@
   -webkit-mask-size : 30px 23px;
   -webkit-mask-repeat: no-repeat;
   -webkit-mask-position: center;
+  transition: all 150ms ease-in;
 }
 
 
@@ -582,12 +586,14 @@
 #section4-title {
   font-style: italic;
   font-size: var(--fs-xl1);
+  opacity :0;
 }
 
 #section4-punch {
   font-weight: bold;
   font-size: var(--fs-xl2);
   text-align: center;
+  opacity : 0;
 }
 
 .section4-title-container {
