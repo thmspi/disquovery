@@ -41,10 +41,10 @@ function coordinate() {
   }
 
   if (section2.getBoundingClientRect().top <545 && section2.getBoundingClientRect().top > -1128) {
-    logo.style.background = "linear-gradient(90deg, rgba(12,82,163,1) 1%, rgba(79,53,177,1) 20%, rgba(147,116,208,1) 41%, rgba(213,110,162,1) 59%)";
-    account.style.background = "linear-gradient(347deg, rgba(12,82,163,1) 1%, rgba(79,53,177,1) 20%, rgba(147,116,208,1) 53%, rgba(213,110,162,1) 96%)";
-    accountText.style.background = "linear-gradient(347deg, rgba(12,82,163,1) 1%, rgba(79,53,177,1) 20%, rgba(147,116,208,1) 53%, rgba(213,110,162,1) 96%) ";
-    accountLogo.style.background = "linear-gradient(347deg, rgba(12,82,163,1) 1%, rgba(79,53,177,1) 20%, rgba(147,116,208,1) 53%, rgba(213,110,162,1) 96%) ";
+    logo.style.background = "var(--logo-gradient-blue)";
+    account.style.background = "var(--account-gradient-blue)";
+    accountText.style.background = "var(--account-gradient-blue)";
+    accountLogo.style.background = "var(--account-gradient-blue)";
     accountText.style.webkitBackgroundClip = "text";
   } else if (section2.getBoundingClientRect().top < -1128 && section2.getBoundingClientRect().top > -2000) {
     logo.style.background = "#0079C8";
@@ -78,10 +78,10 @@ function coordinate() {
     accountLogo.style.backgroundColor = "white";
     accountText.style.webkitBackgroundClip = "text";
   } else {
-    logo.style.background = "linear-gradient(90deg,rgb(185, 0, 0) 0%, rgb(209, 1, 1) 16%, rgb(234, 35, 0) 27%, rgb(214, 100, 0) 46%, rgb(255, 221, 0) 68%)";
-    account.style.background = "linear-gradient(270deg, rgba(252,0,0,1) 0%, rgba(255,62,62,1) 16%, rgb(199, 15, 2) 27%, rgb(234, 86, 0) 46%, rgb(255, 136, 0) 68%)";
-    accountText.style.background = "linear-gradient(270deg,rgba(252,0,0,1) 0%, rgba(255,62,62,1) 16%, rgb(234, 86, 0) 46%, rgb(255, 136, 0) 68%)";
-    accountLogo.style.background = "linear-gradient(90deg, rgba(252,0,0,1) 0%, rgb(205, 0, 0) 78%, rgb(131, 0, 0) 95%)";
+    logo.style.background = "var(--logo-gradient-red)";
+    account.style.background = "var(--account-gradient-red)";
+    accountText.style.background = "var(--account-text-red)";
+    accountLogo.style.background = "var(--account-logo-red)";
     accountText.style.webkitBackgroundClip = "text";
   }
 }
