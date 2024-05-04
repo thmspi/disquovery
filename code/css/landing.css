@@ -670,8 +670,8 @@
 
 #section5 {
   margin-top: 10vw;
-  margin-bottom: 25vw;
   padding : 0 3vw;
+  overflow : hidden;
 }
 
 #section5-title {
@@ -741,7 +741,7 @@
 #blur-vald {
   position : absolute;
   z-index: -1;
-  width : 70vw;
+  width : 60vw;
 }
 
 #section6 {
