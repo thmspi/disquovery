@@ -1,0 +1,45 @@
+@media (max-width : 640px) {
+  
+  .logo-container {
+    margin-left : 50px;
+  }
+
+  .account-text {
+    display : none;
+  }
+  .account {
+    width : 40px;
+    height : 25px;
+  }
+
+  .fav-text {
+    display : none;
+  }
+
+  .menu-option {
+    display : none;
+  }
+  .discover-button  {
+    padding : 5px 10px;
+    border-radius: 20px;
+  }
+
+  .hamburger-container {
+    display : block;
+  }
+
+  #footer-text-cont {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+}
+
+@media (min-width : 641px) {
+
+  .hamburger-container {
+    display : none;
+  }
+  
+}
