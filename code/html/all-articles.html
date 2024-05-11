@@ -20,7 +20,7 @@
     <header>
       <div class = "first-menu-line">
         <div class="hamburger-container">
-          <input class="checkbox" type="checkbox" id="hamburger-toggle" aria-label="Toggle Navigation"/>
+          <input class="checkbox" type="checkbox" id="hamburger-toggle" aria-label="Toggle Navigation">
           <label class="hamburger" for="hamburger-toggle">
             <span class="slice"></span>
             <span class="slice"></span>
@@ -29,24 +29,26 @@
           <div class = "drawer">
             <ul class = "option-container">
               <li class = "menu-lines1">Nouveautés</li>
-              <a href = "../html/all-articles.html" class = "menu-lines2">
-                Articles
-              </a>
+              <li>
+                <a class = "menu-lines2" href = "../html/all-articles.html">
+                  Articles
+                </a>
+              </li>
             </ul>
           </div>
         </div>
-        <a href = "./landing.html"class = "logo-container">
+        <a href = "./landing.html" class = "logo-container">
         </a>
         <div class = "header-space"></div>
         <div class = "news">
           <p class = "menu-option">Nouveautés</p>
         </div>
         <a href = "./all-articles.html" class = "article">
-          <p  class = "menu-option">Articles</p>
+          <p class = "menu-option">Articles</p>
         </a>
         <div class = "favorite">
           <p class = "fav-text">Favoris</p>
-          <img src = "../../imgs/landing-page/star.svg" class = "star">
+          <img src = "../../imgs/landing-page/star.svg" class = "star" alt = "illustration-favoris">
         </div>
         <div class = "account-container">
           <div class = "account">
@@ -58,6 +60,45 @@
         </div>
       </div>
     </header>
+
+    <div id = "grid-section">
+      <div id = "grid-container">
+        <div class = "grid-row" id = "row1">
+          <div class = "grid-box" id = "1"></div>
+          <div class = "grid-box" id = "2"></div>
+          <div class = "grid-box" id = "3"></div>
+          <div class = "grid-box" id = "4"></div>
+        </div>
+        <div class = "grid-row" id = "row2">
+          <div class = "grid-box" id = "5"></div>
+          <div class = "grid-box" id = "6"></div>
+          <div class = "grid-box" id = "7"></div>
+          <div class = "grid-box" id = "8"></div>
+        </div>
+        <div class = "grid-row" id = "row3">
+          <div class = "grid-box" id = "9"></div>
+          <div class = "grid-box" id = "10"></div>
+          <div class = "grid-box" id = "11"></div>
+          <div class = "grid-box" id = "12"></div>
+        </div>
+        <div class = "grid-row" id = "row4">
+          <div class = "grid-box" id = "13"></div>
+          <div class = "grid-box" id = "14"></div>
+          <div class = "grid-box" id = "15"></div>
+          <div class = "grid-box" id = "16"></div>
+        </div>
+      </div>
+      <img src = "../../imgs/all-articles/TL.png" id = "blur1">
+      <img src = "../../imgs/all-articles/ML.png" id = "blur2">
+      <img src = "../../imgs/all-articles/BL.png" id = "blur3">
+      <img src = "../../imgs/all-articles/MM.png" id = "blur4">
+      <img src = "../../imgs/all-articles/TR.png" id = "blur5">
+      <img src = "../../imgs/all-articles/BR.png" id = "blur6">  
+    </div>
+    <div id = "section2">
+      <h1>Articles</h1>
+    </div>
+
     <footer>
       <div id = "footer-delimiter">
       </div>
@@ -66,9 +107,6 @@
         <p>Un projet web par <i>Thomas Picou</i> et <i>Abdel-Waheb Sakkal</i></p>
       </div>
     </footer>
-    <script src = "../javascript/caroussel.js"></script>
-    <script src = "../javascript/landing.js"></script>
-    <script src = "../javascript/scroll.js"></script>
-    <script src = "../javascript/card.js"></script>
+    <script src = "../javascript/all-articles/grid.js"></script>
   </body>
 </html>
