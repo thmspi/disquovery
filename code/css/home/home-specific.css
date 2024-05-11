@@ -160,10 +160,10 @@
   align-items: center;
   justify-content: center;
   mask-size: 150px 35px;
-  mask-image: url("../../imgs/landing-page/Logo.svg");
+  mask-image: url("../../../imgs/landing-page/Logo.svg");
   mask-repeat: no-repeat;
   mask-position: center;
-  -webkit-mask-image: url("../../imgs/landing-page/Logo.svg");
+  -webkit-mask-image: url("../../../imgs/landing-page/Logo.svg");
   -webkit-mask-size : 150px 35px;
   -webkit-mask-repeat: no-repeat;
   -webkit-mask-position: center;
@@ -249,11 +249,11 @@
   width : 30px;
   height : 30px;
   z-index : 2;
-  -webkit-mask-image: url("../../imgs/landing-page/account-logo.svg");
+  -webkit-mask-image: url("../../../imgs/landing-page/account-logo.svg");
   -webkit-mask-size : 30px 23px;
   -webkit-mask-repeat: no-repeat;
   -webkit-mask-position: center;
-  mask-image: url("../../imgs/landing-page/account-logo.svg");
+  mask-image: url("../../../imgs/landing-page/account-logo.svg");
   mask-position: center;
   mask-repeat: no-repeat;
   mask-size : 30px 23px;
@@ -366,9 +366,7 @@
 }
 
 .recommended-artist p {
-  padding-bottom: 6em;
   padding-bottom: 2vh;
-  
 }
 
 .section2-title {
