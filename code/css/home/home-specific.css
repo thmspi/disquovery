@@ -196,6 +196,13 @@
 
 /* Caroussel */
 
+.lecteur-spo {
+  width: 100%;
+  border-radius: 12px;
+  height : 152px;
+  border : none;
+}
+
 .center-title {
   display : flex;
   justify-content: center;
@@ -315,6 +322,10 @@
 #section4 {
   margin-top : 30vh;
   padding : 5vw;
+}
+
+#section4 h1 {
+  font-weight: normal;
 }
 
 #section4-title {

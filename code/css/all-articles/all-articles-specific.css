@@ -55,8 +55,6 @@
   animation: changeOpacity 18s 5s infinite both;
 }
 
-
-
 #grid-container {
 
   aspect-ratio: 1;
@@ -151,4 +149,38 @@
 
 .grid-box img {
   width : 100%;
+}
+
+#section2 {
+  display : flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding : 0 10vw 150px 10vw;
+}
+
+h1 {
+  font-size: var(--fs-xl1);
+}
+
+h2 {
+  font-size: var(--fs-medium1);
+}
+
+#section2 a {
+  font-size: var(--fs-text1);
+  text-decoration: dashed;
+}
+
+#section2 a:hover {
+  cursor : pointer;
+  text-decoration: underline;
+}
+
+li {
+  padding : 3px 0px;
+}
+
+#summary {
+  list-style: none;
 }
