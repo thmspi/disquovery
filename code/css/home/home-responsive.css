@@ -39,7 +39,7 @@
     display : flex;
   }
 
-  #recommended-artist {
+  #recommanded-section {
     display : flex;
     align-items: center;
     flex-direction: column;

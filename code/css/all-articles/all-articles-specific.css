@@ -1,16 +1,16 @@
-.logo-container {
+#logo-container {
   background: linear-gradient(90deg, rgba(93,56,105,1) 13%, rgba(156,82,180,1) 63%, rgba(252,70,107,1) 100%); 
 }
 
-.account {
+#account {
   background: linear-gradient(270deg, rgba(93,56,105,1) 13%, rgba(156,82,180,1) 63%, rgba(252,70,107,1) 100%); 
 }
 
-.account-logo {
+#account-logo {
   background: linear-gradient(270deg, rgba(93,56,105,1) 13%, rgba(156,82,180,1) 100%); 
 }
 
-.account-text {
+#account-text {
   background: linear-gradient(270deg, rgba(93,56,105,1) 13%, rgba(156,82,180,1) 73%, rgba(252,70,107,1) 100%); 
   background-clip: text;
 }

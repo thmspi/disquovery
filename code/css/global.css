@@ -208,12 +208,12 @@ footer {
   cursor : pointer;
 }
 
-.header-space {
+#header-space {
   flex-shrink: 100;
   flex : 1;
 }
 
-.logo-container { 
+#logo-container { 
   flex-shrink: 0;
   width : 150px;
   height : 35px;
@@ -233,42 +233,42 @@ footer {
   transition: all 150ms ease-in;
 }
 
-.logo-container:hover {
+#logo-container:hover {
   cursor : pointer;
 }
 
-.news, .article, .favorite {
+#news, #article, #favorite {
   margin : 0px 1vw;
 }
 
-.favorite {
+#favorite {
   display : flex;
   flex-direction: row;
   align-items: center;
   transition-duration: 150ms;
 }
 
-.favorite:hover {
+#favorite:hover {
   cursor : pointer;
 }
 
-.star {
+#star {
   height : 20px;
   margin : 0vh 0.5vw;
   bottom : 0px;
 }
 
-.account-container {
+#account-container {
   z-index: 10;
   transition : 150ms all ease-in;
 }
 
-.account-container:hover {
+#account-container:hover {
   cursor : pointer;
   transform: scale(1.1);
 }
 
-.account {
+#account {
   width : 135px;
   height : 21px;
   position: relative;
@@ -281,7 +281,7 @@ footer {
   transition: all 150ms ease-in;
 }
 
-.account-background {
+#account-background {
   
   padding: 0 2px 0 0.2vw;
   justify-content: center;
@@ -299,7 +299,7 @@ footer {
   transition: all 150ms ease-in;
 }
 
-.account-text {
+#account-text {
   background: var(--account-text-red );
   -webkit-background-clip : text;
   -webkit-text-fill-color : transparent;
@@ -307,7 +307,7 @@ footer {
   transition: all 150ms ease-in;
 }
 
-.account-logo {
+#account-logo {
   background: var(--account-logo-red);
   width : 30px;
   height : 30px;

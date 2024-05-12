@@ -1,6 +1,6 @@
-const container = document.getElementsByClassName("favorite")[0];
-const star = document.getElementsByClassName("star")[0];
-const fav = document.getElementsByClassName("fav-text")[0];
+const container = document.getElementById("favorite");
+const star = document.getElementById("star");
+const fav = document.getElementById("fav-text");
 
 
 container.addEventListener("mouseover", ()=> 

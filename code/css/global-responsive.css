@@ -1,18 +1,18 @@
 @media (max-width : 640px) {
   
-  .logo-container {
+  #logo-container {
     margin-left : 50px;
   }
 
-  .account-text {
+  #account-text {
     display : none;
   }
-  .account {
+  #account {
     width : 40px;
     height : 25px;
   }
 
-  .fav-text {
+  #fav-text {
     display : none;
   }
 

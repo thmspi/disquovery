@@ -3,7 +3,7 @@ var slider = document.getElementsByClassName("slider")[0];
 var buttons = document.getElementsByClassName("btn");
 var cardList = document.getElementsByClassName("card");
 var cards = cardList.length;
-var lecteur = document.getElementsByClassName("lecteur")[0];
+var lecteur = document.getElementById("lecteur");
 var tab_lecteur = ['<iframe  src="https://open.spotify.com/embed/track/41hl3QWKVaFZMZTNZhrARK?utm_source=generator"   allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy" class = "lecteur-spo"></iframe>'
 ,                 '<iframe  src="https://open.spotify.com/embed/track/4sUTagdmyuyAxd7RvbygpQ?utm_source=generator"  allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy" class = "lecteur-spo"></iframe>',
                   '<iframe  src="https://open.spotify.com/embed/track/6YWjskKykdPsBuiTBOg1VK?utm_source=generator"   allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy" class = "lecteur-spo"></iframe>',
