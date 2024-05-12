@@ -83,7 +83,7 @@ footer {
 }
 
 /* Header */
-.first-menu-line {
+#first-menu-line {
   position: relative;
   display : flex;
   flex-direction:row;
@@ -95,7 +95,7 @@ footer {
 }
 
 /* Lignes menu responsif */
-.menu-lines1 {
+#menu-lines1 {
   height : 50px;
   width : 100%;
   border-top : solid 1px grey;
@@ -105,12 +105,12 @@ footer {
   transition : all 150ms ease-in;
 }
 
-.menu-lines1:hover, .menu-lines2:hover{
+#menu-lines1:hover, #menu-lines2:hover{
   cursor : pointer;
   background-color: #3a3636;
 }
 
-.menu-lines2 {
+#menu-lines2 {
   height : 50px;
   width : 100%;
   border-top : solid 1px grey;
@@ -122,7 +122,7 @@ footer {
 
 
 /* Menu Hamburger */
-.hamburger-container {
+#hamburger-container {
   display  : none;
   width : 25px;
   position: absolute;
@@ -132,33 +132,33 @@ footer {
   transition: transform 0.5s ease;
 }
 
-.hamburger-container .checkbox {
+#hamburger-container .checkbox {
   opacity: 0;
   position: absolute;
 }
 
-.hamburger-container .checkbox:checked ~ .drawer a {
+#hamburger-container .checkbox:checked ~ .drawer a {
   visibility: visible;
 }
 
-.hamburger-container .drawer a {
+#hamburger-container .drawer a {
   visibility: hidden;
   transition: visibility 0.5s linear;
 }
 
-.hamburger-container .checkbox:checked ~ .drawer {
+#hamburger-container .checkbox:checked ~ .drawer {
   transform: translateX(0%);
 }
 
-.hamburger-container .checkbox:checked ~ .hamburger .slice:nth-child(1) {
+#hamburger-container .checkbox:checked ~ .hamburger .slice:nth-child(1) {
   transform: translateY(10px) rotate(45deg);
 }
 
-.hamburger-container .checkbox:checked ~ .hamburger .slice:nth-child(2) {
+#hamburger-container .checkbox:checked ~ .hamburger .slice:nth-child(2) {
   opacity: 0;
 }
 
-.hamburger-container .checkbox:checked ~ .hamburger .slice:nth-child(3) {
+#hamburger-container .checkbox:checked ~ .hamburger .slice:nth-child(3) {
   transform: translateY(-10px) rotate(-45deg);
 }
 

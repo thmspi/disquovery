@@ -19,12 +19,8 @@
   .menu-option {
     display : none;
   }
-  .discover-button  {
-    padding : 5px 10px;
-    border-radius: 20px;
-  }
 
-  .hamburger-container {
+  #hamburger-container {
     display : block;
   }
 
@@ -38,7 +34,7 @@
 
 @media (min-width : 641px) {
 
-  .hamburger-container {
+  #hamburger-container {
     display : none;
   }
   
