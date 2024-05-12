@@ -1,10 +1,10 @@
 const title = document.getElementById("section4-title");
 const punch = document.getElementById("section4-punch");
 const section2 = document.getElementById("recommanded-section");
-const logo = document.getElementsByClassName("logo-container")[0];
-const account = document.getElementsByClassName("account")[0];
-const accountText = document.getElementsByClassName("account-text")[0];
-const accountLogo = document.getElementsByClassName("account-logo")[0];
+const logo = document.getElementById("logo-container");
+const account = document.getElementById("account");
+const accountText = document.getElementById("account-text");
+const accountLogo = document.getElementById("account-logo");
 
 //-1844
 //-2400
