@@ -9,6 +9,7 @@
 
 @keyframes move {
   0% {
+    filter : hue-rotate(0deg);
     background-position: left;
   }
   05% {
@@ -39,6 +40,7 @@
     background-position: 60% 75%;
   }
   50% {
+    filter : hue-rotate(360deg);
     background-position: 80% 95%;
   }
   55% {
@@ -69,6 +71,7 @@
     background-position: 69% 99%;
   }
   100% {
+    filter : hue-rotate(0deg);
     background-position: 60% 90%;
   }
 }
