@@ -1,0 +1,83 @@
+/* Portraits */
+
+#portrait-container{
+    display: flex;
+    flex-direction: row;
+    height: 79vh;
+    align-items: center;
+    justify-content: center;
+    padding-top: 50px;
+}
+
+.portrait{
+    width : 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.portrait img{
+    width : 50%;
+    height : auto;
+    align-items: center;
+    justify-content: center;
+}
+
+.portrait p{
+    font-size: 1.5em;
+    text-align: center;
+    padding: 10px;
+}
+
+#thomas-portrait img, #thomas-portrait p{
+    margin-left: 20%;
+}
+
+#abdel-waheb-portrait img, #abdel-waheb-portrait p{
+    margin-right: 20%;
+}
+
+
+
+/* Cercle autour de images */
+#thomas-portrait, #abdel-waheb-portrait{
+    position: relative;
+}
+
+.portrait-circle{
+    position: absolute;
+    width: 50% ; 
+    height: 85%; 
+    border-radius: 50%; 
+    top: 0;
+}
+
+#thomas-circle {
+    margin-left: 20%;
+}
+
+#abdel-waheb-circle {
+    margin-right: 20%;
+}
+
+
+
+/* Remplacement de texte */
+.text-container{
+    width: 100%;
+    border-radius: 25px;
+}
+
+#replacement-text {
+    font-size: 1.2em;
+    text-align: center;
+    padding: 20px;
+}                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    
+
+.remplacement-text{
+    font-size: 1.2em;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 20px;;
+}

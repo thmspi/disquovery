@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orelega+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel = "stylesheet" href = "../css/global.css" >
+    <link rel = "stylesheet" href = "../css/global-responsive.css">
+    <link rel="stylesheet" href="../css/about/about.css">
+    <link rel="stylesheet" href="../css/about/about-responsive.css">
+    <title>Disquover - About</title>
+  </head>
+
+  <body>
+
+    <header>
+      <div id = "first-menu-line">
+        <div id="hamburger-container">
+          <input class="checkbox" type="checkbox" id="hamburger-toggle" aria-label="Toggle Navigation">
+          <label class="hamburger" for="hamburger-toggle">
+            <span class="slice"></span>
+            <span class="slice"></span>
+            <span class="slice"></span>
+          </label>
+          <div class = "drawer">
+          <ul>
+            <li id = "menu-lines1">Nouveautés</li>
+            <li>
+            <a id = "menu-lines2" href = "../html/all-articles.html">
+                Articles
+            </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <a href = "./landing.html" id = "logo-container"></a>
+      <div id = "header-space"></div>
+        <div id = "news">
+            <p class = "menu-option">Nouveautés</p>
+        </div>
+        <a href = "./all-articles.html" id = "article">
+          <p class = "menu-option">Articles</p>
+        </a>
+        <div id = "favorite">
+          <p id = "fav-text">Favoris</p>
+          <img src = "../../imgs/landing-page/star.svg" id = "star" alt = "illustration-favoris">
+        </div>
+          <div id = "account-container">
+            <div id = "account">
+              <div id = "account-background">
+              <p id = "account-text">Compte</p>
+              <div id = "account-logo"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div id="portrait-container">
+
+      <div class="portrait" id="thomas-portrait">
+        <img src="../../imgs/about/thomas_portrait.png" alt="">
+        <div class="portrait-circle" id="thomas-circle"></div>
+        <div class="text-container" id="thomas-text-container">
+          <p id="thomas-text">Thomate Picou</p>
+          <p class="remplacement-text" id="thomas-remplacement-text" style="display: none;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam iaculis augue velit, pellentesque egestas nulla laoreet ut. Ut eget diam vel enim lobortis convallis non et ante.</p>
+        </div>
+      </div>
+
+      <div class="portrait" id="abdel-waheb-portrait">
+        <img src="../../imgs/about/abdel-waheb_portrait.png" alt="">
+        <div class="portrait-circle" id="abdel-waheb-circle"></div>
+        <div class="text-container" id="abdel-waheb-text-container">
+          <p id="abdel-waheb-text">Abdel-Waheb Sakkal</p>
+          <p class="remplacement-text" id="abdel-waheb-remplacement-text" style="display: none;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam iaculis augue velit, pellentesque egestas nulla laoreet ut. Ut eget diam vel enim lobortis convallis non et ante.</p>
+        </div>
+        </div> 
+
+    </div>
+    
+    <footer>
+      <div id = "footer-delimiter"></div>
+      <div id = "footer-text-cont">
+        <p>© disquover</p>
+        <p>Un projet web par <i>Thomas Picou</i> et <i>Abdel-Waheb Sakkal</i></p>
+      </div>
+    </footer>
+
+    <script src="../javascript/global.js"></script>
+    <script src="../javascript/about/about.js"></script>
+
+  </body>
+</html>

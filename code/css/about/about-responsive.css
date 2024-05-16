@@ -1,0 +1,20 @@
+@media(max-width: 640px){
+    #portrait-container {
+        flex-direction: column;
+    }
+    .portrait{
+        width: 80%;
+        margin-bottom: 50px;
+        margin-top: 50px;
+    }
+    .portrait img{
+        width: 60%;     
+    }
+    #thomas-portrait img, #thomas-portrait p{
+        margin-left: 0;
+    }
+    #abdel-waheb-portrait img, #abdel-waheb-portrait p{
+        margin-right: 0;
+    }
+
+}
