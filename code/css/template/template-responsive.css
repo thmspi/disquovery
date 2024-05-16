@@ -11,7 +11,7 @@
   }
   .r-photo-text, .r-photo-text-legend, .l-text-photo, .l-text-photo-legend {
     margin: 0 2vw;
-    text-align: center;
+    text-align: justify;
   }
 
   .img-container {
@@ -31,5 +31,17 @@
 
   .img-container {
     width: 30vw;
+  }
+}
+@media (min-width : 1050px) {
+  .paragraph {
+    margin-bottom: clamp(1em, 2em, 3em);
+  }
+}
+
+
+@media (max-width : 1049px) {
+  .paragraph {
+    margin-bottom: clamp(5px, 1em, 3em);
   }
 }
