@@ -60,9 +60,32 @@
       </div>
       <div id = "scroller"></div>
     </header>
-    <h1 id = "main-header">
-      Titre
-    </h1>
+    <div class = "article-header">
+      <h1 id = "main-header">
+        Titre
+      </h1>
+      <div class = "global-option-container">
+        <div id = "fav-container">
+          <input type = "checkbox" id = "fav-checkbox"></input>
+          <svg width="35" height="35" viewBox="0 0 35 35"  id = "star-button" overflow = "visible">
+          <path d="M12.518 5.96467C14.7346 1.98823 15.8429 0 17.5 0C19.1571 0 20.2653 1.98821 22.4819 5.96466L23.0554 6.99341C23.6854 8.12339 24.0002 8.6884 24.4914 9.06118C24.9824 9.43397 25.5939 9.57234 26.8171 9.8491L27.9308 10.1011C32.2351 11.075 34.3875 11.562 34.8995 13.2085C35.4116 14.8551 33.9444 16.5709 31.0098 20.0024L30.2506 20.8901C29.4168 21.8652 28.9997 22.3528 28.8121 22.956C28.6247 23.5592 28.6877 24.2097 28.8137 25.5108L28.9285 26.6952C29.3721 31.2736 29.594 33.5628 28.2535 34.5804C26.9129 35.598 24.8977 34.6702 20.8675 32.8146L19.8249 32.3344C18.6797 31.8072 18.1071 31.5434 17.5 31.5434C16.8929 31.5434 16.3203 31.8072 15.1751 32.3344L14.1325 32.8146C10.1022 34.6702 8.08706 35.598 6.74651 34.5804C5.40596 33.5628 5.62779 31.2736 6.07145 26.6952L6.18621 25.5108C6.3123 24.2097 6.37533 23.5592 6.18775 22.956C6.00019 22.3528 5.58325 21.8652 4.74936 20.8901L3.99017 20.0024C1.05569 16.5709 -0.411561 14.8551 0.100488 13.2085C0.612538 11.562 2.76475 11.075 7.06919 10.1011L8.1828 9.8491C9.40598 9.57234 10.0176 9.43397 10.5086 9.06118C10.9997 8.6884 11.3147 8.12341 11.9446 6.99341L12.518 5.96467Z" fill="currentColor"/>
+          </svg>
+            
+        </div>
+        <div class = "opinion-container">
+          <div class = "input-container">
+            <input type = "radio" id = "like" name = "opinion" autocomplete="off"></input>
+            <svg id = "thumb_up" height="24px" viewBox="0 -960 960 960" width="24px" fill="currentColor"><path d="M720-120H280v-520l280-280 50 50q7 7 11.5 19t4.5 23v14l-44 174h258q32 0 56 24t24 56v80q0 7-2 15t-4 15L794-168q-9 20-30 34t-44 14Zm-360-80h360l120-280v-80H480l54-220-174 174v406Zm0-406v406-406Zm-80-34v80H160v360h120v80H80v-520h200Z"/></svg>
+          </div>
+          <div class = "input-container">
+            <input type = "radio" id = "dislike" name = "opinion" autocomplete="off"></input>
+            <svg id = "thumb_down" height="24px" viewBox="0 -960 960 960" width="24px" fill="currentColor"><path d="M240-840h440v520L400-40l-50-50q-7-7-11.5-19t-4.5-23v-14l44-174H120q-32 0-56-24t-24-56v-80q0-7 2-15t4-15l120-282q9-20 30-34t44-14Zm360 80H240L120-480v80h360l-54 220 174-174v-406Zm0 406v-406 406Zm80 34v-80h120v-360H680v-80h200v520H680Z"/></svg>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+    
 
 
 
@@ -169,5 +192,6 @@
       </div>
     </footer>
     <script src = "../javascript/global.js"></script>
+    <script src = "../javascript/template/template.js"></script>
   </body>
 </html>
