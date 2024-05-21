@@ -131,6 +131,8 @@
   background-image: url("../../../imgs/squared-img-artists/rounhaa-card.jpg");
 }
 
+
+
 .grid-box:hover {
   transform: scale(1.2);
   opacity : 1;
