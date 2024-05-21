@@ -12,8 +12,17 @@
     height : 25px;
   }
 
-  #fav-text {
+  #favorite {
     display : none;
+  }
+
+  #text-input {
+    width : 25vw;
+  }
+
+  #searchbar-wrapper {
+    width: calc(25vw + 38px)
+
   }
 
   .menu-option {

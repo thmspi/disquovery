@@ -1,0 +1,100 @@
+{
+  "suggestions" : [
+    {
+      "name" : "luther",
+      "keywords" : ["newwave", "garçon", "exit", "jeune", "artistes"],
+      "path" : "luther.html"
+    },
+    {
+      "name" : "baiser",
+      "keywords" : ["newwave", "wallacecleaver", "wallace", "jeune", "grunt","çalavie", "album"],
+      "path" : "wallacecleaver.html"
+    },
+    {
+      "name" : "jazz",
+      "keywords" : ["musique", "style", "saxophone", "guitare", "instruments"],
+      "path" : "jazz.html"
+    },
+    {
+      "name" : "kolaf",
+      "keywords" : ["lafeve", "kosei", "newwave", "bizarre", "voix", "peinture", "albums", "rap"],
+      "path" : "kolaf.html"
+    },
+    {
+      "name" : "nujabes",
+      "keywords" : ["producteur", "lofi", "artistes", "jeune", "mort"],
+      "path" : "nujabes.html"
+    },
+    {
+      "name" : "sour",
+      "keywords" : ["albums", "pop", "disney", "oliviarodrigo", "violet"],
+      "path" : "sour.html"
+    },
+    {
+      "name" : "ziak",
+      "keywords" : ["sombre", "artistes", "noir", "couteau", "ça c'est des vrais couteaux", "rap"],
+      "path" : "ziak.html"
+    },
+    {
+      "name" : "lofi",
+      "keywords" : ["style", "doux", "pluie", "appaisant"],
+      "path" : "lofi.html"
+    },
+    {
+      "name" : "theweeknd",
+      "keywords" : ["synthe", "artistes", "retro", "starboy", "fm", "pop"],
+      "path" : "theweeknd.html"
+    },
+    {
+      "name" : "kendrick vs drake",
+      "keywords" : ["kendrick", "drake", "dramas", "us", "americains", "américains", "anglais", "rap"],
+      "path" : "kvsd.html"
+    },
+    {
+      "name" : "damso",
+      "keywords" : ["artistes", "qalf", "lithopédion", "ipséité", "batterie faible", "caravane", "rap"],
+      "path" : "damso.html"
+    },
+    {
+      "name" : "kanye",
+      "keywords" : ["excentrique", "drama", "taylor swift", "tayloswift", "yeezus", "fou", "bipolaire", "trump", "rap"],
+      "path" : "kanye.html"
+    },
+    {
+      "name" : "freeze rael",
+      "keywords" : ["freezerael", "albums", "lmd", "nmr", "balkani", "rap"],
+      "path" : "freezerael.html"
+    },
+    {
+      "name" : "nueveszn",
+      "keywords" : ["j9ueve", "newwave", "rap", "jeune", "filles"],
+      "path" : "j9ueve.html"
+    },
+    {
+      "name" : "rounhaa",
+      "keywords" : ["artistes", "jaafar", "mobius", "newwave", "classique", "music sound better with you", "msbwy", "sublime"],
+      "path" : "luther.html"
+    },
+    {
+      "name" : "favoris",
+      "keywords": ["fav", "star", "étoile"],
+      "path": "favorites.html"
+    },
+    {
+      "name" : "about",
+      "keywords": ["apropos", "a propos", "nous", "description"],
+      "path": "about.html"
+    },
+    {
+      "name" : "accueil",
+      "keywords": ["home", "acceuil", "accueil", "landing"],
+      "path": "landing.html"
+    },
+    {
+      "name" : "articles",
+      "keywords": ["grille", "grid", "menu articles"],
+      "path": "all-articles.html"
+    }
+  ]
+
+}

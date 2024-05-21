@@ -1,7 +1,9 @@
 const container = document.getElementById("favorite");
 const star = document.getElementById("star");
 const fav = document.getElementById("fav-text");
-
+const textInput = document.getElementById("text-input");
+const suggestionsWrapper = document.getElementById("suggestion-wrapper");
+const suggestionsList = document.getElementById("item-list");
 
 container.addEventListener("mouseover", ()=> 
   {
@@ -58,3 +60,24 @@ container.addEventListener("mouseout", ()=> {
 );
 }
 )
+var hovering = 0;
+
+suggestionsWrapper.addEventListener("mouseover", ()=> {
+  hovering = 1;
+})
+
+suggestionsWrapper.addEventListener("mouseout", ()=> {
+  hovering = 0;
+})
+
+textInput.addEventListener("focusout", ()=> {
+  if (hovering==0) {
+    suggestionsWrapper.style.display = "none";
+  }
+})
+
+textInput.addEventListener("focus", ()=> {
+  suggestionsWrapper.style.display = "inline-block";
+})
+
+
