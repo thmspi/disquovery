@@ -248,7 +248,6 @@ footer {
 }
 
 #text-input {
-  font-size: var(--fs-text2);
   height : 30px;
   border : none;
   padding: 0px 4px;

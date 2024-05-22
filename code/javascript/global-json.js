@@ -51,12 +51,23 @@ function createCard(suggestions) {
   console.log(newList);
 }
 
+function test(array, value) {
+  console.log("Value : "+value);
+  let isIncluded = false;
+  array.forEach(word => {
+    if (word.includes(value)) {
+      console.log(word+" contain "+value);
+      isIncluded =  true;
+    }
+  })
+  return isIncluded;
+}
+
 input.addEventListener("input", (e)=> {
   const value = e.target.value.toLowerCase();
   newList.forEach(suggestion => {
-    const isVisible = suggestion.name.includes(value) ||  suggestion.keywords.forEach(word => {
-      word.includes(value)
-    });
+    const isVisible = suggestion.name.includes(value) || test(suggestion.keywords, value);
+    console.log(isVisible);
     suggestion.element.classList.toggle("hide", !isVisible);
   })
 })

@@ -15,12 +15,13 @@
   background-clip: text;
 }
 
-#scroller {
+/*#scroller {
   width : 100vw;
   height : 2px;
   background-color: rgb(104, 1, 103);
   margin-left : -200vw;
-}
+  overflow: hidden;
+}*/
 
 
 #grid-section {
