@@ -245,7 +245,18 @@ footer {
   justify-content: center;
   align-items: center;
   max-width: 180px;
+  opacity : 0.3;
+  transition: all 150ms;
 }
+
+.searchbar:hover {
+  opacity : 0.5;
+}
+
+.searchbar:has(#text-input:focus) {
+  opacity : 0.5;
+}
+
 
 #text-input {
   height : 30px;
@@ -270,8 +281,12 @@ footer {
   justify-content: center;
   align-items: center;
   background-color: #3a3636;
-
   outline: solid 1px #666666;
+}
+
+#search-button:hover {
+  cursor: pointer;
+  opacity : 0.8;
 }
 
 #search-icon {
@@ -303,7 +318,7 @@ footer {
   top : 35px;
   left : 0px;
   font-family: "Lato", sans-serif;
-  font-size: var(--fs-text2);
+  font-size: var(--fs-text1);
   transition: all 150ms;
   overscroll-behavior: contain;
 }

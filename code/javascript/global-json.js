@@ -2,6 +2,7 @@
 const suggestionList = document.getElementById("item-list");
 const input = document.getElementById("text-input");
 const template = document.querySelector("[list-item-template]");
+const searchButton = document.getElementById("search-button");
 
 window.addEventListener("load", fetchJSON("../json/suggestion.json"));
 
@@ -50,13 +51,26 @@ function createCard(suggestions) {
   );
   console.log(newList);
 }
+searchButton.addEventListener("click", search);
+
+function search() {
+  let searchValue = input.value;
+  console.log("active");
+  newList.forEach(suggestion => {
+    const isVisible = suggestion.name.includes(searchValue) || test(suggestion.keywords, searchValue);
+    if (isVisible) {
+      console.log("found");
+      window.location.replace("./"+suggestion.path);
+    }
+  })
+  console.log("not found");
+  /*window.location.replace("./notfound.html");*/
+}
 
 function test(array, value) {
-  console.log("Value : "+value);
   let isIncluded = false;
   array.forEach(word => {
     if (word.includes(value)) {
-      console.log(word+" contain "+value);
       isIncluded =  true;
     }
   })
@@ -67,7 +81,6 @@ input.addEventListener("input", (e)=> {
   const value = e.target.value.toLowerCase();
   newList.forEach(suggestion => {
     const isVisible = suggestion.name.includes(value) || test(suggestion.keywords, value);
-    console.log(isVisible);
     suggestion.element.classList.toggle("hide", !isVisible);
   })
 })
