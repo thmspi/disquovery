@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orelega+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel = "stylesheet" href = "../css/global.css" >
+    <link rel = "stylesheet" href = "../css/global-responsive.css">
+    <link rel = "stylesheet" href = "../css/account/account-specific.css">
+    <link rel = "stylesheet" href = "../css/account/account-responsive.css">
+    <link rel = "stylesheet" href = "../css/account/account-animation.css">
+    <title>Disquover - Articles</title>
+  </head>
+  <body>
+    <header>
+      <div id = "first-menu-line">
+        <div id="hamburger-container">
+          <input class="checkbox" type="checkbox" id="hamburger-toggle" aria-label="Toggle Navigation">
+          <label class="hamburger" for="hamburger-toggle">
+            <span class="slice"></span>
+            <span class="slice"></span>
+            <span class="slice"></span>
+          </label>
+          <div class = "drawer">
+            <ul>
+              <li id = "menu-lines1">
+                <a>
+                  <p>Favoris</p>
+                </a></li>
+              <li>
+                <a id = "menu-lines2" href = "../html/all-articles.html">
+                  Articles
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <a href = "./landing.html" id = "logo-container">
+        </a>
+        <div id = "header-space"></div>
+        <div id = "searchbar-wrapper">
+          <div class = "searchbar">
+            <input type = "text" placeholder="Search..." id = "text-input">
+            <button id = "search-button">
+              <svg id = "search-icon" height="24px" viewBox="0 -960 960 960" width="24px" fill="currentColor"><path d="M784-120 532-372q-30 24-69 38t-83 14q-109 0-184.5-75.5T120-580q0-109 75.5-184.5T380-840q109 0 184.5 75.5T640-580q0 44-14 83t-38 69l252 252-56 56ZM380-400q75 0 127.5-52.5T560-580q0-75-52.5-127.5T380-760q-75 0-127.5 52.5T200-580q0 75 52.5 127.5T380-400Z"/></svg>
+            </button>
+          </div>
+          <div id = "suggestion-wrapper">
+            <div id="item-list">
+              <template list-item-template>
+                <a class = "suggestion-element"></a>
+              </template>
+            </div>
+          </div>
+        </div>
+        
+        <a href = "./all-articles.html" id = "article">
+          <p class = "menu-option">Articles</p>
+        </a>
+        <div id = "favorite">
+          <p id = "fav-text">Favoris</p>
+          <img src = "../../imgs/landing-page/star.svg" id = "star" alt = "illustration-favoris">
+        </div>
+        <div id = "account-container">
+          <div id = "account">
+            <div id = "account-background">
+              <p id = "account-text">Compte</p>
+              <div id = "account-logo"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div id = "settings">
+      <div id = "settings-box-columns">
+        <div class="box-background" id = "photo-background">
+          <div id = "photo-cont">
+            <div id="photo-cont"></div>
+          </div>
+        </div>
+        <div id = "settings-box-rows">
+          <div class="box-background">
+            <div id="box-row1">
+              <div id="box-row1-title">
+                <input type = "checkbox" id = "edit-checkbox" autocomplete="off">
+                <svg id = "edit-icon" height="24px" viewBox="0 -960 960 960" width="24px" fill="currentColor"><path d="M200-120q-33 0-56.5-23.5T120-200v-560q0-33 23.5-56.5T200-840h357l-80 80H200v560h560v-278l80-80v358q0 33-23.5 56.5T760-120H200Zm280-360ZM360-360v-170l367-367q12-12 27-18t30-6q16 0 30.5 6t26.5 18l56 57q11 12 17 26.5t6 29.5q0 15-5.5 29.5T897-728L530-360H360Zm481-424-56-56 56 56ZM440-440h56l232-232-28-28-29-28-231 231v57Zm260-260-29-28 29 28 28 28-28-28Z"/></svg>
+                <h2>Infos</h2>
+              </div>
+              <form id="box-row1-body">
+                <div class="line">
+                  <p>Nom :   </p><p id = "surname"></p>
+                </div>
+                <div class="line">
+                  <p>Prénom :</p><p id = "name"></p>
+                </div>
+                <div class="line">
+                  <p>Mail :  </p><p id = "mail"></p>
+                </div>
+                <div class="line">
+                  <p>Statut :</p><p id = "statut">Défaut</p>
+                </div>
+                <input type = "submit" form = "box-row1-body" value = "Update"></input>
+              </form>
+            </div>
+          </div>
+          <div class="box-background" id = "box-background2">
+            <div id="box-row2">
+              <div id="box-row2-title">
+                <h2>Interêts</h2>
+              </div>
+              <div id="box-row2-body">
+                <div id = "interest-container">
+                  <div id = "interest-list">
+                    <div id = "add-interest-container">
+                      <input id = "text-interest" type = "text" placeholder="Add..."></input>
+                      <button id = "add-button-interest" onclick = "addItem()">+</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    
+    <footer>
+      <div id = "footer-delimiter">
+      </div>
+      <div id = "footer-text-cont">
+        <p>© disquover</p>
+        <p>Un projet web par <i>Thomas Picou</i> et <i>Abdel-Waheb Sakkal</i></p>
+      </div>
+    </footer>
+    <script src = "../javascript/account/interest.js"></script>
+    <script src = "../javascript/global.js"></script>
+    <script src = "../javascript/global-json.js"></script>
+  </body>
+</html>

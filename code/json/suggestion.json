@@ -94,6 +94,16 @@
       "name" : "articles",
       "keywords": ["grille", "grid", "menu articles"],
       "path": "all-articles.html"
+    },
+    {
+      "name" : "template",
+      "keywords": ["article"],
+      "path": "template.html"
+    },
+    {
+      "name" : "account",
+      "keywords": ["compte", "acount", "moi", "user"],
+      "path": "account.html"
     }
   ]
 
