@@ -5,7 +5,7 @@ h2 {
   font-weight: 500;
 }
 
-#box-row1-body [type = "text"] {
+#box-row1-body [type = "text"],  #box-row1-body [type = "date"]{
   border: solid 1px rgb(243, 242, 242);
   border-radius: 3px;
   background-color: var(--header-back-col);
@@ -20,9 +20,10 @@ h2 {
   background-color:rgb(15, 139, 1);
   color: white;
   border : none;
-  padding : 10px 15px;
+  padding : 6px 10px;
   border-radius: 5px;
   transition: all 100ms;
+  margin-bottom: 5px;
 }
 
 #settings-box-columns:has(#edit-checkbox:checked) [type = "submit"] {
@@ -162,15 +163,15 @@ opacity: 1;
 
 
 #box-row1-title {
-  flex : 1;
+  height : 40px;
   width : 100%;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: end;
 }
 
 #box-row1-body {
-  padding: 10px 10px;
+  padding: 0px 10px;
   flex : 3;
   width : 100%;
   display : flex;

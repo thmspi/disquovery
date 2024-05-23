@@ -12,9 +12,14 @@ editButton.addEventListener("click", ()=> {
   let nameItem = document.getElementById("name");
   let mailItem = document.getElementById("mail");
   let statutItem = document.getElementById("statut");
+  let dateItem = document.getElementById("date");
   editable = editButton.checked;
   if (editable) {
     editButton.disabled = true;
+    var newDate = document.createElement("input");
+    newDate.value = dateItem.value;
+    newDate.type = "date";
+
     var newSurname = document.createElement("input");
     newSurname.value = surnameItem.textContent;
     newSurname.type = "text";
@@ -49,11 +54,12 @@ editButton.addEventListener("click", ()=> {
     } else {
       newStatut.options[2].selected = true;
     }
-
+    newDate.id = "date";
     newSurname.id = "surname";
     newName.id = "name";
     newMail.id = "mail";
     newStatut.id = "statut";
+    dateItem.replaceWith(newDate);
     surnameItem.replaceWith(newSurname);
     nameItem.replaceWith(newName);
     mailItem.replaceWith(newMail);
@@ -82,6 +88,7 @@ function addItem() {
 }
 
 function verifyInput() {
+  let dateItem = document.getElementById("date");
   let surnameItem = document.getElementById("surname");
   let nameItem = document.getElementById("name");
   let mailItem = document.getElementById("mail");
@@ -93,6 +100,13 @@ function verifyInput() {
   nameItem.style.backgroundColor = "#272424";
   mailItem.style.backgroundColor = "#272424";
   surnameItem.style.backgroundColor = "#272424";
+  dateItem.style.backgroundColor = "#272424";
+
+  if (!dateItem.value != "") {
+    console.log("date format false"+dateItem.value);
+    dateItem.style.backgroundColor = "rgb(227, 74, 74)";
+    condition = false;
+  }
 
   if(!text.test(surnameItem.value)) {
     surnameItem.style.backgroundColor = "rgb(227, 74, 74)";
@@ -120,12 +134,16 @@ function verifyInput() {
 form.addEventListener("submit", (e)=> {
   e.preventDefault();
   if (verifyInput()) {
+    let dateItem = document.getElementById("date");
     let surnameItem = document.getElementById("surname");
     let nameItem = document.getElementById("name");
     let mailItem = document.getElementById("mail");
     let statutItem = document.getElementById("statut");
     editButton.disabled = false;
     editButton.checked = false;
+    var newDate = document.createElement("p");
+    newDate.textContent = dateItem.value;
+
     var newSurname = document.createElement("p");
     newSurname.textContent = surnameItem.value;
 
@@ -137,10 +155,12 @@ form.addEventListener("submit", (e)=> {
 
     var newStatut = document.createElement("p");
     newStatut.textContent = statutItem.options[statutItem.selectedIndex].text;
+    newDate.id = "date";
     newSurname.id = "surname";
     newName.id = "name";
     newMail.id = "mail";
     newStatut.id = "statut";
+    dateItem.replaceWith(dateItem);
     surnameItem.replaceWith(newSurname);
     nameItem.replaceWith(newName);
     mailItem.replaceWith(newMail);
