@@ -54,17 +54,16 @@ function createCard(suggestions) {
 searchButton.addEventListener("click", search);
 
 function search() {
-  let searchValue = input.value;
-  console.log("active");
-  newList.forEach(suggestion => {
-    const isVisible = suggestion.name.includes(searchValue) || test(suggestion.keywords, searchValue);
-    if (isVisible) {
-      console.log("found");
-      window.location.replace("./"+suggestion.path);
-    }
-  })
-  console.log("not found");
-  /*window.location.replace("./notfound.html");*/
+  let elements = document.getElementsByClassName("suggestion-element");
+  var i = 0;
+  while(elements[i].classList.contains("hide") && i < elements.length) {
+    i++;
+  }
+  if(i != elements.length) {
+    window.location.replace(elements[i].href);
+  } else {
+    console.log("not found")
+  }
 }
 
 function test(array, value) {
@@ -84,4 +83,12 @@ input.addEventListener("input", (e)=> {
     suggestion.element.classList.toggle("hide", !isVisible);
   })
 })
+
+input.addEventListener('keydown', (event) => {
+  if (input.focus) {
+    if (event.key === 'Enter') {
+      search();
+    }
+  }
+});
 
