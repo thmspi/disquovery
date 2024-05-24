@@ -78,6 +78,7 @@ opacity: 1;
 }
 
 #left-cont {
+  z-index: 2;
   border-radius: 20px;
   background-color:  var(--header-back-col);
   position : absolute;
@@ -91,6 +92,7 @@ opacity: 1;
 }
 
 #photo-row {
+
   flex : 1;
   display: flex;
   justify-content: end;
@@ -176,14 +178,16 @@ opacity: 1;
   align-items: center;
   transition: all 150ms;
   position: relative;
+  overflow: hidden;
 }
 
 .box-background:has(#box-row1:hover), .box-background:has(#box-row2:hover), .box-background:has(#left-cont:hover) {
-  background-color: rgb(142, 140, 140, 0.8)
+  background-color: rgb(142, 140, 140, 0.3);
 }
 
 
 #box-row1 {
+  z-index: 2;
   background-color: var(--header-back-col);
   border-radius: 20px;
   display : flex;
@@ -202,6 +206,10 @@ opacity: 1;
   height : 20px;
   opacity : 0;
   transition: all 150ms;
+}
+
+[type = "checkbox"]:hover {
+  cursor:pointer;
 }
 
 #edit-checkbox {
@@ -251,6 +259,7 @@ opacity: 1;
 }
 
 #box-row2{
+  z-index: 2;
   background-color: var(--header-back-col);
   border-radius: 20px;
   display : flex;
@@ -363,3 +372,18 @@ opacity: 1;
   transition: all 150ms;
 }
 
+.border-blur {
+  left : var(--X);
+  top : var(--Y);
+  position: absolute;
+  z-index: 1;
+  width : 220px;
+  aspect-ratio: 1;
+  background:radial-gradient(rgba(255, 255, 255, 0.7),  rgba(142, 140, 140, 0));
+  transition: all 150ms;
+  opacity: 0;
+}
+
+#left-background:hover .border-blur, #box-background2:hover .border-blur, #box-background1:hover .border-blur  {
+  opacity: 1;
+}

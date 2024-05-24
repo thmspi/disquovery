@@ -66,20 +66,21 @@
           <p id = "fav-text">Favoris</p>
           <img src = "../../imgs/landing-page/star.svg" id = "star" alt = "illustration-favoris">
         </div>
-        <div id = "account-container">
+        <a href = "./account.html" id = "account-container">
           <div id = "account">
             <div id = "account-background">
               <p id = "account-text">Compte</p>
               <div id = "account-logo"></div>
             </div>
           </div>
-        </div>
+        </a>
       </div>
     </header>
 
     <div id = "settings">
       <div id = "settings-box-columns">
         <div class="box-background" id = "left-background">
+          <div class ="border-blur"></div>
           <div id = "left-cont">
             <div id="photo-row">
               <div id = "photo-cont">
@@ -97,7 +98,8 @@
           </div>
         </div>
         <div id = "settings-box-rows">
-          <div class="box-background">
+          <div class="box-background" id = "box-background1">
+            <div class ="border-blur"></div>
             <div id="box-row1">
               <div id="box-row1-title">
                 <input type = "checkbox" id = "edit-checkbox" autocomplete="off">
@@ -125,6 +127,7 @@
             </div>
           </div>
           <div class="box-background" id = "box-background2">
+            <div class ="border-blur"></div>
             <div id="box-row2">
               <div id="box-row2-title">
                 <h2>Interêts</h2>
@@ -157,5 +160,6 @@
     <script src = "../javascript/account/interest.js"></script>
     <script src = "../javascript/global.js"></script>
     <script src = "../javascript/global-json.js"></script>
+    <script src = "../javascript/account/tracker.js"></script>
   </body>
 </html>
