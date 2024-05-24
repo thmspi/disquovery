@@ -274,7 +274,6 @@ function saveInfos() {
                                        , profilPic : profilePicId
                                        , interests : interestContent}));
   }
-  //console.log(sessionStorage);
 }
     // Fonction pour charger les messages de la session navigateur
 function loadInfos() {
@@ -297,6 +296,8 @@ function loadInfos() {
     pp.setAttribute("src", profilePicPathTab[savedInfos.profilPic]);
     statutItem.textContent = savedInfos.statut;
     savedInfos.interests.forEach(item =>(restoreItem(item)));
+    profilePicId = savedInfos.profilPic;
+    backgroundColorId= savedInfos.background;
   } else {
     statutItem.textContent = "Défaut";
     bg.style.backgroundColor = backgroundColorTab[0];
