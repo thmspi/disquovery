@@ -79,9 +79,21 @@
 
     <div id = "settings">
       <div id = "settings-box-columns">
-        <div class="box-background" id = "photo-background">
-          <div id = "photo-cont">
-            <div id="photo-cont"></div>
+        <div class="box-background" id = "left-background">
+          <div id = "left-cont">
+            <div id="photo-row">
+              <div id = "photo-cont">
+                <img id = "profil-pic" alt = "profil-pic">
+              </div>
+              <div id = "button-line">
+                <button  class = "switch" onclick = "switchPP()" >Profil Pic</button>
+                <button class = "switch" onclick = "switchBG()" >Background</button>
+              </div>
+            </div>
+            <div id = "username-row" style = "font-style: italic;">
+              <p id = "username-title">username :</p>
+              <p id = "username">#000xc00</p>
+            </div>
           </div>
         </div>
         <div id = "settings-box-rows">
@@ -106,7 +118,7 @@
                   <p>Mail :  </p><p id = "mail"></p>
                 </div>
                 <div class="line">
-                  <p>Statut :</p><p id = "statut">Défaut</p>
+                  <p>Statut :</p><p id = "statut"></p>
                 </div>
                 <input type = "submit" form = "box-row1-body" value = "Update" id = "submit-button"></input>
               </form>

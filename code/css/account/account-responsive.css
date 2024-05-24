@@ -1,9 +1,13 @@
-@media(max-width:900px) {
+@media(max-width:980px) {
   #settings-box-columns{
     flex-direction: column;
     justify-content: center;
     width : 400px;
     height : 100vh;
+  }
+  #photo-row {
+    padding-top: 20px;
+    margin-bottom: 0;
   }
 
   #settings-box-rows {

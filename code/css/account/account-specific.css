@@ -71,19 +71,86 @@ opacity: 1;
   gap : 15px;
 }
 
-#photo-background {
-  min-width: 200px;
+#left-background {
+  min-width: 250px;
   height : 380px;
   flex: 1;
 }
 
-#photo-cont {
+#left-cont {
   border-radius: 20px;
   background-color:  var(--header-back-col);
   position : absolute;
   overflow: hidden;
   inset : 1px;
+  display : flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 
+}
+
+#photo-row {
+  flex : 1;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  gap : 10px;
+  flex-direction: column;
+  margin-bottom: 20px;
+  color : rgb(7, 102, 161);
+}
+
+#photo-cont {
+  border-radius: 20px;
+  width : 200px;
+  height : 200px;
+  display : flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+#button-line{
+  display: flex;
+  gap : 10px;
+  opacity: 0;
+  transition: all 150ms;
+  pointer-events: none;
+}
+
+#settings-box-columns:has(#edit-checkbox:checked) #button-line {
+  pointer-events: all;
+  opacity: 1;
+}
+
+
+.switch {
+  padding : 3px 5px;
+  background-color: #3c3838;
+  border-radius: 3px;
+  border: 1px solid lightgrey;
+  color: white;
+  opacity: 0.4;
+  transition: all 150ms;
+}
+
+.switch:hover {
+  opacity : 0.8;
+}
+
+#username-row {
+  height : 100px;
+  display : flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+}
+
+#username {
+  font-size: 40px;
+  font-weight: 600;
+  font-style: normal;
 }
 
 #settings-box-rows {
@@ -111,7 +178,7 @@ opacity: 1;
   position: relative;
 }
 
-.box-background:has(#box-row1:hover), .box-background:has(#box-row2:hover), .box-background:has(#photo-cont:hover) {
+.box-background:has(#box-row1:hover), .box-background:has(#box-row2:hover), .box-background:has(#left-cont:hover) {
   background-color: rgb(142, 140, 140, 0.8)
 }
 

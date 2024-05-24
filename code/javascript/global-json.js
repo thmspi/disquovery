@@ -28,7 +28,6 @@ function fetchJSON(url) {
       throw new Error('Empty JSON or malformed JSON');
     }
     // Passer les intentions à la fonction sendMessage qui sera définie plus tard
-    console.log(data);
     createCard(data.suggestions);
   })
   //catch est une méthode qui retourne une promesse et prend en paramètre une
@@ -49,8 +48,8 @@ function createCard(suggestions) {
     return {name : suggestion.name, keywords : suggestion.keywords, path : suggestion.path, element : card}
   }
   );
-  console.log(newList);
 }
+
 searchButton.addEventListener("click", search);
 
 function search() {
