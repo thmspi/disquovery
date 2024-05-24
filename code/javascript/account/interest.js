@@ -17,7 +17,7 @@ editButton.addEventListener("click", ()=> {
   if (editable) {
     editButton.disabled = true;
     var newDate = document.createElement("input");
-    newDate.value = dateItem.textContent;
+    newDate.value = reverseTransformDate(dateItem.textContent);
     newDate.type = "date";
 
     var newSurname = document.createElement("input");
@@ -166,6 +166,29 @@ function verifyJSON(infos) {
   
 }
 
+function transformDate(dateStr) {
+  const dateParts = dateStr.split('-');
+  
+  if (dateParts.length !== 3 || 
+      dateParts[0].length !== 4 || 
+      dateParts[1].length !== 2 || 
+      dateParts[2].length !== 2) {
+    throw new Error('Invalid date format');
+  }
+  
+  return `${dateParts[2]}-${dateParts[1]}-${dateParts[0]}`;
+}
+
+function reverseTransformDate(dateStr) {
+  // Split the date string into an array
+  const dateParts = dateStr.split('-');
+  
+  // Rearrange the parts to YYYY-MM-DD
+  const transformedDate = `${dateParts[2]}-${dateParts[1]}-${dateParts[0]}`;
+  
+  return transformedDate;
+}
+
 form.addEventListener("submit", (e)=> {
   e.preventDefault();
   if (verifyInput()) {
@@ -178,7 +201,7 @@ form.addEventListener("submit", (e)=> {
     editButton.disabled = false;
     editButton.checked = false;
     var newDate = document.createElement("p");
-    newDate.textContent = dateItem.value;
+    newDate.textContent = transformDate(dateItem.value);
 
     var newSurname = document.createElement("p");
     newSurname.textContent = surnameItem.value;
