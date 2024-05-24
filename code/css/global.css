@@ -80,6 +80,10 @@ footer {
   font-size: var(--fs-footer);
 }
 
+img {
+  color : rgba(40, 40, 40, 0.2);
+}
+
 @font-face {
   font-family: Giovanetta;
   src: url("../../../fonts/Giovanetta-1fd3.woff");

@@ -52,7 +52,7 @@
           </div>
           <div id = "suggestion-wrapper">
             <div id="item-list">
-              <template list-item-template>
+              <template id = "list-item-template">
                 <a class = "suggestion-element"></a>
               </template>
             </div>
@@ -83,7 +83,7 @@
           <div id = "left-cont">
             <div id="photo-row">
               <div id = "photo-cont">
-                <img id = "profil-pic" alt = "profil-pic">
+                <img src = "empty" id = "profil-pic" alt = "profil-pic">
               </div>
               <div id = "button-line">
                 <button  class = "switch" onclick = "switchPP()" >Profil Pic</button>
@@ -120,7 +120,7 @@
                 <div class="line">
                   <p>Statut :</p><p id = "statut"></p>
                 </div>
-                <input type = "submit" form = "box-row1-body" value = "Update" id = "submit-button"></input>
+                <input type = "submit" form = "box-row1-body" value = "Update" id = "submit-button">
               </form>
             </div>
           </div>
@@ -133,7 +133,7 @@
                 <div id = "interest-container">
                   <div id = "interest-list">
                     <div id = "add-interest-container">
-                      <input id = "text-interest" type = "text" placeholder="Add..."></input>
+                      <input id = "text-interest" type = "text" placeholder="Add...">
                       <button id = "add-button-interest" onclick = "addItem()">+</button>
                     </div>
                   </div>

@@ -1,7 +1,7 @@
 
 const suggestionList = document.getElementById("item-list");
 const input = document.getElementById("text-input");
-const template = document.querySelector("[list-item-template]");
+const template = document.getElementById("list-item-template");
 const searchButton = document.getElementById("search-button");
 
 window.addEventListener("load", fetchJSON("../json/suggestion.json"));
