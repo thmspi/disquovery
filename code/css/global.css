@@ -17,7 +17,7 @@
   --logo-gradient-blue : linear-gradient(90deg, rgba(12,82,163,1) 1%, rgba(79,53,177,1) 20%, rgba(147,116,208,1) 41%, rgba(213,110,162,1) 59%);
   --account-gradient-blue : linear-gradient(347deg, rgba(12,82,163,1) 1%, rgba(79,53,177,1) 20%, rgba(147,116,208,1) 53%, rgba(213,110,162,1) 96%);
   --card-gradient : linear-gradient(45deg,#1f077f,#420f94,#6331b4,#845EC2,#D65DB1,#FF6F91,#ee5372,#ca3665,#820814);
-  --footer-gradient : linear-gradient(102deg,rgba(25,1,89,1) 0%,rgba(24,9,131,1) 30%,rgba(15,65,166,1) 55%,rgba(20,143,196,1) 76%,rgba(0,174,255,1) 100%); 
+  --footer-gradient : linear-gradient(102deg,rgb(50, 0, 0) 0%,rgb(131, 13, 9) 30%,rgb(196, 32, 6) 55%,rgb(215, 76, 7) 76%,rgb(255, 140, 0) 100%); 
 }
 
 html {
