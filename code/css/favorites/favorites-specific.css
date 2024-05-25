@@ -1,0 +1,13 @@
+
+#fav-container {
+  width : 100vw;
+  min-height : calc(100vh - 153px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#no-item {
+  padding-top:  100px;
+  color : rgb(101, 101, 101);
+}

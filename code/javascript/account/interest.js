@@ -229,7 +229,7 @@ form.addEventListener("submit", (e)=> {
     notification.classList.add("animate");
     setTimeout(()=> {
       notification.classList.remove("animate");
-    }, 4000);
+    }, 2000);
 
     
   }

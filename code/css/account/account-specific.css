@@ -63,7 +63,7 @@ opacity: 1;
 }
 
 .animate {
-  animation: notify 4000ms 1 forwards;
+  animation: notify 2000ms 1 forwards;
 }
 
 #success-notification {
