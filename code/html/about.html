@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orelega+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <link rel = "stylesheet" href = "../css/global.css" >
+    <link rel = "stylesheet" href = "../css/global-responsive.css">
+    <link rel = "stylesheet" href = "../css/about/about-specific.css">
+    <title>Disquover - Articles</title>
+  </head>
+  <body>
+    <header>
+      <div id = "first-menu-line">
+        <div id="hamburger-container">
+          <input class="checkbox" type="checkbox" id="hamburger-toggle" aria-label="Toggle Navigation">
+          <label class="hamburger" for="hamburger-toggle">
+            <span class="slice"></span>
+            <span class="slice"></span>
+            <span class="slice"></span>
+          </label>
+          <div class = "drawer">
+            <ul>
+              <li id = "menu-lines1">
+                <a href = "./favorites.html">
+                  <p>Favoris</p>
+                </a></li>
+              <li>
+                <a id = "menu-lines2" href = "../html/all-articles.html">
+                  Articles
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <a href = "./landing.html" id = "logo-container">
+        </a>
+        <div id = "header-space"></div>
+        <div id = "searchbar-wrapper">
+          <div class = "searchbar">
+            <input type = "text" placeholder="Search..." id = "text-input">
+            <button id = "search-button">
+              <svg id = "search-icon" height="24px" viewBox="0 -960 960 960" width="24px" fill="currentColor"><path d="M784-120 532-372q-30 24-69 38t-83 14q-109 0-184.5-75.5T120-580q0-109 75.5-184.5T380-840q109 0 184.5 75.5T640-580q0 44-14 83t-38 69l252 252-56 56ZM380-400q75 0 127.5-52.5T560-580q0-75-52.5-127.5T380-760q-75 0-127.5 52.5T200-580q0 75 52.5 127.5T380-400Z"/></svg>
+            </button>
+          </div>
+          <div id = "suggestion-wrapper">
+            <div id="item-list">
+              <template id = "list-item-template">
+                <a class = "suggestion-element"></a>
+              </template>
+            </div>
+          </div>
+        </div>
+        
+        <a href = "./all-articles.html" id = "article">
+          <p class = "menu-option">Articles</p>
+        </a>
+        <a href = "./favorites.html" id = "favorite">
+          <p id = "fav-text">Favoris</p>
+          <img src = "../../imgs/landing-page/star.svg" id = "star" alt = "illustration-favoris">
+        </a>
+        <a href = "./account.html" id = "account-container">
+          <div id = "account">
+            <div id = "account-background">
+              <p id = "account-text">Compte</p>
+              <div id = "account-logo"></div>
+            </div>
+          </div>
+        </a>
+      </div>
+    </header>
+
+    <div id = "about-container">
+      <div id = "title-container">
+        <p class = "title-line">
+          <span class = "word">
+            <span class = "letter">L</span>
+            <span class = "letter">e</span>
+          </span>
+          <span class = "word">
+            <span class = "letter" >P</span>
+            <span class = "letter">r</span>
+            <span class = "letter">o</span>
+            <span class = "letter">j</span>
+            <span class = "letter">e</span>
+            <span class = "letter">t</span>
+          </span>
+          <span class = "word">
+            <span class = "letter">W</span>
+            <span class = "letter">e</span>
+            <span class = "letter">b</span>
+          </span>
+        </p>
+        <p class = "title-line">
+          <span class = "word">
+            <span class = "letter">T</span>
+            <span class = "letter">h</span>
+            <span class = "letter">o</span>
+            <span class = "letter">m</span>
+            <span class = "letter">a</span>
+            <span class = "letter">s</span>
+          </span><span class = "word">
+            <span class = "letter">P</span>
+            <span class = "letter">i</span>
+            <span class = "letter">c</span>
+            <span class = "letter">o</span>
+            <span class = "letter">u</span>
+          </span>
+        </p>
+        <p class = "title-line">
+          <span class = "word">
+            <span class = "letter">A</span>
+            <span class = "letter">b</span>
+            <span class = "letter">d</span>
+            <span class = "letter">e</span>
+            <span class = "letter">l</span>
+          </span><span class = "word">
+            <span class = "letter">W</span>
+            <span class = "letter">a</span>
+            <span class = "letter">h</span>
+            <span class = "letter">e</span>
+            <span class = "letter">b</span>
+          </span>
+        </p>
+        <p class = "title-line">
+          <span class = "word">
+            <span class = "letter">L</span>
+            <span class = "letter">e</span>
+            <span class = "letter">s</span>
+          </span>
+          <span class = "word">
+            <span class = "letter">D</span>
+            <span class = "letter">i</span>
+            <span class = "letter">f</span>
+            <span class = "letter">f</span>
+            <span class = "letter">i</span>
+            <span class = "letter">c</span>
+            <span class = "letter">u</span>
+            <span class = "letter">l</span>
+            <span class = "letter">t</span>
+            <span class = "letter">é</span>
+            <span class = "letter">s</span>
+          </span>
+        </p>
+      </div>
+      <div id = "text-container">
+        <div class = "hidden-paragraph">
+          <p>1</p>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus vero illo animi fugit, doloribus pariatur. Quis, excepturi eius beatae voluptate a, quasi ex veniam asperiores voluptas quae sapiente nesciunt odio.</p>
+        </div>
+        <div class = "hidden-paragraph">
+          <p>2</p>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus vero illo animi fugit, doloribus pariatur. Quis, excepturi eius beatae voluptate a, quasi ex veniam asperiores voluptas quae sapiente nesciunt odio.</p>
+        </div>
+        <div class = "hidden-paragraph">
+          <p>3</p>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus vero illo animi fugit, doloribus pariatur. Quis, excepturi eius beatae voluptate a, quasi ex veniam asperiores voluptas quae sapiente nesciunt odio.</p>
+        </div>
+        <div class = "hidden-paragraph">
+          <p>4</p>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus vero illo animi fugit, doloribus pariatur. Quis, excepturi eius beatae voluptate a, quasi ex veniam asperiores voluptas quae sapiente nesciunt odio.</p>
+        </div>
+      </div>
+    </div>
+  
+    
+    <footer>
+      <div id = "footer-delimiter">
+      </div>
+      <div id = "footer-text-cont">
+        <div id = "left-footer-text">
+          <p>© disquover</p>
+          <a href = "./about.html">A Propos</a>
+        </div>
+        <p>Un projet web par <i>Thomas Picou</i> et <i>Abdel-Waheb Sakkal</i></p>
+      </div>
+    </footer>
+    <script src = "../javascript/global.js"></script>
+    <script src = "../javascript/global-json.js"></script>
+  </body>
+</html>
