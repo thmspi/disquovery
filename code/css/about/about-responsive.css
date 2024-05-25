@@ -1,0 +1,32 @@
+@media (max-width : 920px) {
+  #text-container p {
+    line-height: 2.3vw;
+  }
+}
+
+@media (max-width : 640px) {
+  #text-container p {
+    line-height: 3.4vw;
+  }
+}
+
+@media (max-width : 640px) {
+  #about-container {
+    flex-direction: column;
+  }
+  #title-container {
+    width: 65vw;
+    flex: none;
+  }
+
+  #text-container {
+    aspect-ratio: initial;
+    width: 80%;
+    max-width:none;
+  }
+
+  .hidden-paragraph {
+    padding-top: 30px;
+    justify-content: start;
+  }
+}
