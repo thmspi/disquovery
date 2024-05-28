@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="zxx">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orelega+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel = "stylesheet" href = "../css/global.css" >
+    <link rel = "stylesheet" href = "../css/global-responsive.css">
+    <link rel = "stylesheet" href = "../css/template/template-responsive.css">
+    <link rel = "stylesheet" href = "../css/template/template.css">
+    <title>Disquover - J9ueve</title>
+  </head>
+  <body>
+    <header>
+      <div id = "first-menu-line">
+        <div id="hamburger-container">
+          <input class="checkbox" type="checkbox" id="hamburger-toggle" aria-label="Toggle Navigation">
+          <label class="hamburger" for="hamburger-toggle">
+            <span class="slice"></span>
+            <span class="slice"></span>
+            <span class="slice"></span>
+          </label>
+          <div class = "drawer">
+            <ul>
+              <li >
+                <a id = "menu-lines1" href = "./favorites.html">
+                  <p>Favoris</p>
+                </a></li>
+              <li>
+                <a id = "menu-lines2" href = "../html/all-articles.html">
+                  Articles
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <a href = "./landing.html" id = "logo-container">
+        </a>
+        <div id = "header-space"></div>
+        <div id = "searchbar-wrapper">
+          <div class = "searchbar">
+            <input type = "text" placeholder="Search..." id = "text-input">
+            <button id = "search-button">
+              <svg id = "search-icon" height="24px" viewBox="0 -960 960 960" width="24px" fill="currentColor"><path d="M784-120 532-372q-30 24-69 38t-83 14q-109 0-184.5-75.5T120-580q0-109 75.5-184.5T380-840q109 0 184.5 75.5T640-580q0 44-14 83t-38 69l252 252-56 56ZM380-400q75 0 127.5-52.5T560-580q0-75-52.5-127.5T380-760q-75 0-127.5 52.5T200-580q0 75 52.5 127.5T380-400Z"/></svg>
+            </button>
+          </div>
+          <div id = "suggestion-wrapper">
+            <div id="item-list">
+              <template id = "list-item-template">
+                <a class = "suggestion-element"></a>
+              </template>
+            </div>
+          </div>
+        </div>
+        
+        <a href = "./all-articles.html" id = "article">
+          <p class = "menu-option">Articles</p>
+        </a>
+        <a href = "./favorites.html" id = "favorite">
+          <p id = "fav-text">Favoris</p>
+          <img src = "../../imgs/landing-page/star.svg" id = "star" alt = "illustration-favoris">
+        </a>
+        <a href = "./account.html" id = "account-container">
+          <div id = "account">
+            <div id = "account-background">
+              <p id = "account-text">Compte</p>
+              <div id = "account-logo"></div>
+            </div>
+          </div>
+        </a>
+      </div>
+    </header>
+
+    <div class = "article-header">
+      <h1 id = "main-header">
+        Nueve SZN, une nouvelle ère pour J9ueve ?
+      </h1>
+      <div class = "global-option-container">
+        <div id = "fav-container">
+          <input type = "checkbox" id = "fav-checkbox">
+          <svg width="35" height="35" viewBox="0 0 35 35"  id = "star-button" overflow = "visible">
+          <path d="M12.518 5.96467C14.7346 1.98823 15.8429 0 17.5 0C19.1571 0 20.2653 1.98821 22.4819 5.96466L23.0554 6.99341C23.6854 8.12339 24.0002 8.6884 24.4914 9.06118C24.9824 9.43397 25.5939 9.57234 26.8171 9.8491L27.9308 10.1011C32.2351 11.075 34.3875 11.562 34.8995 13.2085C35.4116 14.8551 33.9444 16.5709 31.0098 20.0024L30.2506 20.8901C29.4168 21.8652 28.9997 22.3528 28.8121 22.956C28.6247 23.5592 28.6877 24.2097 28.8137 25.5108L28.9285 26.6952C29.3721 31.2736 29.594 33.5628 28.2535 34.5804C26.9129 35.598 24.8977 34.6702 20.8675 32.8146L19.8249 32.3344C18.6797 31.8072 18.1071 31.5434 17.5 31.5434C16.8929 31.5434 16.3203 31.8072 15.1751 32.3344L14.1325 32.8146C10.1022 34.6702 8.08706 35.598 6.74651 34.5804C5.40596 33.5628 5.62779 31.2736 6.07145 26.6952L6.18621 25.5108C6.3123 24.2097 6.37533 23.5592 6.18775 22.956C6.00019 22.3528 5.58325 21.8652 4.74936 20.8901L3.99017 20.0024C1.05569 16.5709 -0.411561 14.8551 0.100488 13.2085C0.612538 11.562 2.76475 11.075 7.06919 10.1011L8.1828 9.8491C9.40598 9.57234 10.0176 9.43397 10.5086 9.06118C10.9997 8.6884 11.3147 8.12341 11.9446 6.99341L12.518 5.96467Z" fill="currentColor"/>
+          </svg>
+            
+        </div>
+        <div class = "opinion-container">
+          <div class = "input-container">
+            <input type = "radio" id = "like" name = "opinion" autocomplete="off">
+            <svg id = "thumb_up" height="24px" viewBox="0 -960 960 960" width="24px" fill="currentColor"><path d="M720-120H280v-520l280-280 50 50q7 7 11.5 19t4.5 23v14l-44 174h258q32 0 56 24t24 56v80q0 7-2 15t-4 15L794-168q-9 20-30 34t-44 14Zm-360-80h360l120-280v-80H480l54-220-174 174v406Zm0-406v406-406Zm-80-34v80H160v360h120v80H80v-520h200Z"/></svg>
+          </div>
+          <div class = "input-container">
+            <input type = "radio" id = "dislike" name = "opinion" autocomplete="off">
+            <svg id = "thumb_down" height="24px" viewBox="0 -960 960 960" width="24px" fill="currentColor"><path d="M240-840h440v520L400-40l-50-50q-7-7-11.5-19t-4.5-23v-14l44-174H120q-32 0-56-24t-24-56v-80q0-7 2-15t4-15l120-282q9-20 30-34t44-14Zm360 80H240L120-480v80h360l-54 220 174-174v-406Zm0 406v-406 406Zm80 34v-80h120v-360H680v-80h200v520H680Z"/></svg>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+  
+    <div class = "photo-text">
+      <div class = "l-photo-text">
+        <div class = "img-container">
+          <img src = "../../imgs/photo-template/J9ueve.jpg" alt = "test" class = "article-img">
+        </div>
+      </div>
+      <div class = "r-photo-text">
+        <p class = "paragraph">Les festivals de ce printemps et de cet été, dont We Love Green, au bois de Vincennes à Paris, le 4 juin, sont nombreux à programmer le rappeur ­parisien J9ueve, 20 ans. Et avec lui, jeune pousse du label du musicien Laylow, ils mettent en avant une variante du rap français… la new wave. Oui, comme le courant musical porté par les Talking Heads, The Cure et autres Depeche Mode à partir de la fin des années 1970.</p>
+        <p class = "paragraph">Si le nom est le même, c’est que cette nouvelle new wave opère sur un principe similaire. Plus mélodique, employant davantage de synthétiseurs que la version brute de leur musique d’origine, la new wave du rap propose un hip-hop plus aéré, aux thèmes plus intimes, moins durs.</p>
+        <p class = "paragraph">J9ueve, de son vrai nom Jules Vincent, est l’un de ses héros. Son premier album, Le Bijou le plus brillant, publié en mars, en est une belle démonstration. Entre electronica, R’n’B et rap, le jeune homme s’épanche sur ses états d’âme d’étudiant en bachelor marketing. Il décrit ses relations amoureuses qui n’aboutissent pas ou se finissent mal dans Le Monde était à nous et enchaîne avec des réflexions sur l’amitié.
+        </p>
+      </div>
+    </div>
+
+    <div class = "quote">
+      <p>"Un banger addictif"</p>
+    </div>
+
+
+    <div class = "text">
+      <p>Les featurings inédits attirent toujours la curiosité. C’est le cas pour SHE LIT, entre Green Montana et J9ueve. Les deux artistes ont des univers différents, mais complémentaires. 
+
+        Sur une prod de Hofmann, ils lâchent des flows entêtants et des couplets efficaces. Le tout est sublimé par le visuel de SHE LIT, réalisé par Arthur Keasy et tourné dans un château. </p><br>
+      <p>Dès ses débuts en 2019 sur la plateforme Soundcloud, J9ueve se distingue par son style unique et mélancolique. Ses textes poétiques et introspectifs, souvent empreints de romantisme, sont portés par une voix atypique et une musicalité novatrice. Ses instrumentales, souvent produites par lui-même, mêlent habilement des influences cloud rap, plugg et trap, créant une ambiance vaporeuse et envoûtante.</p><br>
+      <p>Rapidement repéré par la scène underground, J9ueve enchaîne les freestyles et les collaborations, notamment avec Luv Connexion, Eden Dillinger et Maes. Son premier EP, "J9", sorti en 2020, confirme son talent et lui permet de se faire connaître d'un public plus large.
+
+        En 2021, il signe chez le label ALSO/A+LSO et sort son premier album, "LVL2". Cet opus, acclamé par la critique et le public, marque un tournant dans sa carrière. J9ueve se positionne comme l'un des leaders de la New Wave, un courant du rap français qui se caractérise par ses sonorités innovantes et ses textes introspectifs.</p>
+    </div>
+
+    
+
+    <div class = "centered-space">
+      <iframe class = "ytb"src="https://www.youtube.com/embed/3l0MuWbSX08?si=ka12Th76Cz4V8oK9" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+
+    <div class = "text">
+      <p>J9ueve est non seulement un rappeur talentueux, mais également un producteur accompli. Il réalise lui-même la plupart de ses instrumentales, insufflant à sa musique une identité unique et reconnaissable. Sa créativité et son sens de l'expérimentation font de lui un artiste complet et prometteur.</p><br>
+      <p>Avec sa voix singulière, ses textes profonds et ses productions innovantes, J9ueve s'impose comme l'une des figures les plus excitantes du rap français actuel. Son talent et sa détermination lui promettent un avenir radieux au sein d'une scène en constante évolution.</p>
+    </div>
+    
+    <footer>
+      <div id = "footer-delimiter">
+      </div>
+      <div id = "footer-text-cont">
+        <div id = "left-footer-text">
+          <p>© disquover</p>
+          <a href = "./about.html">A Propos</a>
+        </div>
+        <p>Un projet web par <i>Thomas Picou</i> et <i>Abdel-Waheb Sakkal</i></p>
+      </div>
+    </footer>
+    <script src = "../javascript/global.js"></script>
+    <script src = "../javascript/global-json.js"></script>
+    <script src = "../javascript/template/template.js"></script>
+  </body>
+</html>
