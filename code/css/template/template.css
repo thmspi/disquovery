@@ -215,9 +215,25 @@ h1 {
 
 .centered-space {
   display : flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  width : 100%;
-  background-color: blue;
-  min-height: 100px;
+  width: 100%;
+}
+
+.centered-space img{
+  width: 3  0%;
+  height: auto;
+}
+
+.centered-space p{
+  font-size: calc(var(--fs-text2)*0.8);
+  padding : 0 2vw;
+  margin-bottom : 60px;
+}
+
+.centered-space iframe{
+  width: 60vw;
+  aspect-ratio: 560/315;
+  border-radius: 10px;
 }
