@@ -218,22 +218,13 @@ h1 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 100%;
-}
-
-.centered-space img{
-  width: 3  0%;
-  height: auto;
-}
-
-.centered-space p{
-  font-size: calc(var(--fs-text2)*0.8);
-  padding : 0 2vw;
+  width : 100%;
+  min-height: 100px;
   margin-bottom : 60px;
 }
 
-.centered-space iframe{
-  width: 60vw;
-  aspect-ratio: 560/315;
+.centered-space .ytb {
   border-radius: 10px;
+  width : 60vw;
+  aspect-ratio: 560/315;
 }
