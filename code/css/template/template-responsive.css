@@ -21,6 +21,10 @@
   .text-photo, .text-photo-legend {
     flex-direction: column-reverse;
   }
+
+  .mosaique {
+    flex-direction: column;
+  }
 }
 
 
@@ -45,3 +49,4 @@
     margin-bottom: clamp(5px, 1em, 3em);
   }
 }
+

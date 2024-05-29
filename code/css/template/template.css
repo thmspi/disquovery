@@ -223,8 +223,27 @@ h1 {
   margin-bottom : 60px;
 }
 
-.centered-space .ytb {
+.centered-space iframe {
   border-radius: 10px;
   width : 60vw;
   aspect-ratio: 560/315;
+}
+
+.mosaique {
+  display : flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width : 100%;
+  min-height: 100px;
+  margin-bottom : 60px;
+}
+
+.mosaique img {
+  width : var(--image-size);
+  height : var(--image-size);
+  object-fit: cover;
+  object-position: center;
+  border-radius: 10px;
+  margin-left: 10%;
 }
