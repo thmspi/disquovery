@@ -73,7 +73,12 @@
     {
       "name" : "rounhaa",
       "keywords" : ["artistes", "jaafar", "mobius", "newwave", "classique", "music sound better with you", "msbwy", "sublime"],
-      "path" : "luther.html"
+      "path" : "rounhaa.html"
+    },
+    {
+      "name" : "dua lipa",
+      "keywords": ["femme", "pop", "one kiss", "cramptés", "albania"],
+      "path": "dualipa.html"
     },
     {
       "name" : "favoris",

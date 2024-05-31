@@ -25,6 +25,8 @@
   .mosaique {
     flex-direction: column;
   }
+  .mosaique img {
+    padding-bottom: 0;
 }
 
 

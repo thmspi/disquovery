@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="zxx">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orelega+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel = "stylesheet" href = "../css/global.css" >
+    <link rel = "stylesheet" href = "../css/global-responsive.css">
+    <link rel = "stylesheet" href = "../css/template/template-responsive.css">
+    <link rel = "stylesheet" href = "../css/template/template.css">
+    <title>Disquover - Jazz</title>
+  </head>
+  <body>
+    <header>
+      <div id = "first-menu-line">
+        <div id="hamburger-container">
+          <input class="checkbox" type="checkbox" id="hamburger-toggle" aria-label="Toggle Navigation">
+          <label class="hamburger" for="hamburger-toggle">
+            <span class="slice"></span>
+            <span class="slice"></span>
+            <span class="slice"></span>
+          </label>
+          <div class = "drawer">
+            <ul>
+              <li >
+                <a id = "menu-lines1" href = "./favorites.html">
+                  <p>Favoris</p>
+                </a></li>
+              <li>
+                <a id = "menu-lines2" href = "../html/all-articles.html">
+                  Articles
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <a href = "./landing.html" id = "logo-container">
+        </a>
+        <div id = "header-space"></div>
+        <div id = "searchbar-wrapper">
+          <div class = "searchbar">
+            <input type = "text" placeholder="Search..." id = "text-input">
+            <button id = "search-button">
+              <svg id = "search-icon" height="24px" viewBox="0 -960 960 960" width="24px" fill="currentColor"><path d="M784-120 532-372q-30 24-69 38t-83 14q-109 0-184.5-75.5T120-580q0-109 75.5-184.5T380-840q109 0 184.5 75.5T640-580q0 44-14 83t-38 69l252 252-56 56ZM380-400q75 0 127.5-52.5T560-580q0-75-52.5-127.5T380-760q-75 0-127.5 52.5T200-580q0 75 52.5 127.5T380-400Z"/></svg>
+            </button>
+          </div>
+          <div id = "suggestion-wrapper">
+            <div id="item-list">
+              <template id = "list-item-template">
+                <a class = "suggestion-element"></a>
+              </template>
+            </div>
+          </div>
+        </div>
+        
+        <a href = "./all-articles.html" id = "article">
+          <p class = "menu-option">Articles</p>
+        </a>
+        <a href = "./favorites.html" id = "favorite">
+          <p id = "fav-text">Favoris</p>
+          <img src = "../../imgs/landing-page/star.svg" id = "star" alt = "illustration-favoris">
+        </a>
+        <a href = "./account.html" id = "account-container">
+          <div id = "account">
+            <div id = "account-background">
+              <p id = "account-text">Compte</p>
+              <div id = "account-logo"></div>
+            </div>
+          </div>
+        </a>
+      </div>
+    </header>
+
+    <div class = "article-header">
+      <h1 id = "main-header">
+        Quels sont les meilleurs artistes jazz en 2024 ?
+      </h1>
+      <div class = "global-option-container">
+        <div id = "fav-container">
+          <input type = "checkbox" id = "fav-checkbox">
+          <svg width="35" height="35" viewBox="0 0 35 35"  id = "star-button" overflow = "visible">
+          <path d="M12.518 5.96467C14.7346 1.98823 15.8429 0 17.5 0C19.1571 0 20.2653 1.98821 22.4819 5.96466L23.0554 6.99341C23.6854 8.12339 24.0002 8.6884 24.4914 9.06118C24.9824 9.43397 25.5939 9.57234 26.8171 9.8491L27.9308 10.1011C32.2351 11.075 34.3875 11.562 34.8995 13.2085C35.4116 14.8551 33.9444 16.5709 31.0098 20.0024L30.2506 20.8901C29.4168 21.8652 28.9997 22.3528 28.8121 22.956C28.6247 23.5592 28.6877 24.2097 28.8137 25.5108L28.9285 26.6952C29.3721 31.2736 29.594 33.5628 28.2535 34.5804C26.9129 35.598 24.8977 34.6702 20.8675 32.8146L19.8249 32.3344C18.6797 31.8072 18.1071 31.5434 17.5 31.5434C16.8929 31.5434 16.3203 31.8072 15.1751 32.3344L14.1325 32.8146C10.1022 34.6702 8.08706 35.598 6.74651 34.5804C5.40596 33.5628 5.62779 31.2736 6.07145 26.6952L6.18621 25.5108C6.3123 24.2097 6.37533 23.5592 6.18775 22.956C6.00019 22.3528 5.58325 21.8652 4.74936 20.8901L3.99017 20.0024C1.05569 16.5709 -0.411561 14.8551 0.100488 13.2085C0.612538 11.562 2.76475 11.075 7.06919 10.1011L8.1828 9.8491C9.40598 9.57234 10.0176 9.43397 10.5086 9.06118C10.9997 8.6884 11.3147 8.12341 11.9446 6.99341L12.518 5.96467Z" fill="currentColor"/>
+          </svg>
+            
+        </div>
+        <div class = "opinion-container">
+          <div class = "input-container">
+            <input type = "radio" id = "like" name = "opinion" autocomplete="off">
+            <svg id = "thumb_up" height="24px" viewBox="0 -960 960 960" width="24px" fill="currentColor"><path d="M720-120H280v-520l280-280 50 50q7 7 11.5 19t4.5 23v14l-44 174h258q32 0 56 24t24 56v80q0 7-2 15t-4 15L794-168q-9 20-30 34t-44 14Zm-360-80h360l120-280v-80H480l54-220-174 174v406Zm0-406v406-406Zm-80-34v80H160v360h120v80H80v-520h200Z"/></svg>
+          </div>
+          <div class = "input-container">
+            <input type = "radio" id = "dislike" name = "opinion" autocomplete="off">
+            <svg id = "thumb_down" height="24px" viewBox="0 -960 960 960" width="24px" fill="currentColor"><path d="M240-840h440v520L400-40l-50-50q-7-7-11.5-19t-4.5-23v-14l44-174H120q-32 0-56-24t-24-56v-80q0-7 2-15t4-15l120-282q9-20 30-34t44-14Zm360 80H240L120-480v80h360l-54 220 174-174v-406Zm0 406v-406 406Zm80 34v-80h120v-360H680v-80h200v520H680Z"/></svg>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    
+    <div class="text">
+        <p class="paragraph">Le jazz est un genre musical unique, né au début du 20e siècle aux États-Unis, qui continue d'influencer et de captiver des auditeurs à travers le monde. Ses racines plongent dans la culture afro-américaine, imprégnée de blues, de ragtime et de spirituals. Le jazz se caractérise par son improvisation, ses rythmes syncopés et ses harmonies sophistiquées.</p>
+        <p class="paragraph">Ce genre musical est aussi marqué par ses instruments emblématiques, tels que la trompette, le saxophone, le piano et la contrebasse. Chaque musicien de jazz apporte sa propre touche personnelle, enrichissant le répertoire par des solos improvisés qui reflètent leur sensibilité et leur créativ</p>
+        <p class="paragraph">Au fil des décennies, le jazz a su se renouveler, engendrant des styles variés comme le bebop, le cool jazz, le free jazz et le jazz fusion. Chaque époque a vu émerger des artistes visionnaires qui ont repoussé les limites de ce que la musique pouvait exprimer.</p>
+        <p class="paragraph">Aujourd'hui, le jazz reste une forme d'expression dynamique et en perpétuelle évolution, accueillant de nouveaux talents et s'ouvrant à des influences mondiales. Les festivals de jazz, les clubs intimes et les enregistrements iconiques continuent de nourrir une passion durable pour cette musique envoûtante.</p>
+        <p class="paragraph">Laissez moi donc vous présenter les 3 artistes à suivres en  2024</p>
+    </div>
+
+    <div class="centered-space">
+        <h2>Blue Lab Beats</h2>
+    </div>
+    <div class = "text-photo">
+        
+        <div class = "l-text-photo-legend">
+          <p class = "paragraph">En 2016, alors qu’ils bricolaient des programmations dans leurs appartements londoniens, Namali Kwaten et David Mrakpor ne s’imaginaient sans doute pas qu’ils étaient en train de franchir le premier palier d’une ascension vertigineuse. Composé du claviériste NK-OK (Kwaten) et du multi-instrumentiste Mr. DM (Mrakpor), le duo « jazztronica » Blue Lab Beats a entamé son parcours en réalisant des remixes pour une longue liste de poids lourds du Billboard, dont Dua Lipa et Rag’N’Bone Man. Leur mélange futuriste d’éléments hip-hop, de jazz, d’afrobeat, de soul et de musique électronique va bientôt servir de tremplin à leurs propres créations : après avoir publié une série d’EPs et de singles, XOver, leur premier album voit le jour en 2018. Propulsé par le succès foudroyant de « Pineapple », streamé plus de dix millions de fois, XOver est suivi en 2019 par Voyage, un prolongement des expérimentations analogiques et électroniques chères à Blue Lab Beats.</p>
+          <p class = "paragraph">La suite de l’aventure est marquée par une nouvelle étape déterminante pour NK-OK et Mr. DM : après être apparu en 2020 dans la compilation Blue Note Re:imagined, à l’occasion d’une éclatante reprise de « Montara », le classique de Bobby Hutcherson, le duo de producteurs londoniens publie son premier EP We Will Rise sur le prestigieux label Blue Note Records. L’ambitieux Motherland Journey, leur premier LP enregistré pour l’enseigne jazz de référence, suit en 2022 en pulvérisant les frontières entre les genres, et en mêlant avec ingéniosité les voix du regretté Fela Kuti et celles, entre autres, de Tiana Major9, Ghetto Boy, Kofi Stone et Pip Millet.</p>
+          <p class = "paragraph">Attendu le 19 avril et propulsé par le single « Wait a While », Blue Eclipse, le quatrième album du duo multi-récompensé des deux côtés de l’Atlantique (plusieurs MOBO Awards et un Grammy pour la production du titre « Fired Up » pour Angélique Kidjo), contient douze nouvelles compositions placées sous le signe de l’expérience et du collectif.</p>
+        </div>
+        <div class = "r-text-photo">
+          <div class = "img-container">
+            <img src = "../../imgs/articles-imgs/blue-lab-beats.webp" alt = "test" class = "article-img">
+          </div>
+        </div>
+    </div>
+
+    <div class="centered-space">
+        <h2>Domi et JD BECK</h2>
+    </div>
+    <div class = "photo-text">
+        <div class = "l-photo-text">
+          <div class = "img-container">
+            <img src = "../../imgs/articles-imgs/domi-jd-beck.webp" alt = "test" class = "article-img">
+          </div>
+        </div>
+        <div class = "r-photo-text">
+          <p class = "paragraph">Tout aussi stupéfiante que leur musique hybride, entre jazz, funk, hip-hop R&B et electronica, la première rencontre du duo franco-américain est particulièrement atypique : originaire de Metz, Domitille Degalle, alias DOMi Louna et magicienne des claviers, croise pour la première fois en 2018 le chemin du batteur prodige JD Beck, né à Dallas, au milieu de la cacophonie du salon du NAMM, le plus grand rassemblement musical du monde ayant lieu chaque année à Anaheim, en Californie. Alors respectivement âgés de 18 et 15 ans, DOMi et JD Beck scellent leur association artistique entre deux stands.</p>
+          <p class = "paragraph">Mêlée à des influences multiples convoquent aussi bien Jay Dilla, Madlib, Prince et les musiques de jeux vidéos, l’approche artisanale de ce premier enregistrement donne lieu à des expérimentations inédites : certaines parties instrumentales sont enregistrées sur un iPhone, tandis que les vidéos de leurs séances d’enregistrement sont soigneusement archivées, afin de conserver une trace de leurs complexes échafaudages rythmiques.</p>
+          <p class = "paragraph">Postées sur les réseaux sociaux, ces séquences créatives attirent bientôt l’attention d’Anderson .Paak. En 2020, le rappeur-producteur (et moitié du duo Silk Sonic avec Bruno Mars) les signe sur son label Apeshit Inc., en vue d’un premier album dont le casting dépassera toutes les espérances de DOMi et JD Beck : sorti en juillet 2022, NOT TiGHT, outre la présence d’Anderson .Paak, comprend les participations des rappeurs Snoop Dogg, Busta Rhymes, du bassiste hors-normes Thundercat, du fantasque songwriter indie-pop Mac DeMarco et de la légende du jazz Herbie Hancock. Un éclectisme à l’image de la fusion musicale sans barrières de DOMi et JD Beck. Tout simplement le jazz du futur ?</p>
+        </div>
+      </div>
+    
+
+    <div class="centered-space">
+        <h2>Samara Joy</h2>
+    </div>
+    <div class = "text-photo">
+        
+        <div class = "l-text-photo-legend">
+          <p class = "paragraph">À peine âgée de 24 ans, Samara Joy bénéficie déjà d’une aura prestigieuse et d’un répertoire stellaire. Originaire du Bronx, la native du quartier de Castle Hill a grandi au son de la soul music, du rhythm’n’blues et du gospel, un genre profondément ancré dans la tradition familiale : ses grands-parents paternels avaient fondé à Philadelphie le groupe The Savettes, tandis que son père avait accompagné à la basse le chanteur-vedette Andraé Crouch.</p>
+          <p class = "paragraph">À la découverte de sa propre voix, l’adolescente se produit d’abord dans les comédies musicales de son collège, puis, au lycée, rejoint finalement la chorale de son église locale. Très rapidement, Samara Joy devient la meneuse du chœur, avant de remporter le titre de Meilleure chanteuse lors du concours de l’Essentially Ellington Festival, une compétition organisée par le Jazz at Lincoln Center, club de renom et incontournable institution new-yorkaise. Malgré ce trophée, Samara Joy ne s’imagine pas encore s’inscrire dans la lignée d’Ella Fitzgerald ou de Billie Holiday : au moment d’entrer à l’université, sa décision de s’inscrire au programme jazz du Purchase College est davantage motivée par sa proximité que par sa réelle passion pour le genre… Il suffira d’une chanson pour allumer l’étincelle : lors de ses études, Samara Joy est transfigurée par une épiphanie musicale en découvrant la version de Sarah Vaughan du standard « Lover Man », bientôt suivis par les enregistrements du pianiste Tadd Dameron en compagnie du trompettiste Fats Navarro. La naissance d’une authentique passion pour l’âge d’or du jazz, auquel vient s’ajouter les récentes productions d’Esperanza Spaulding, Gretchen Parlato et Robert Glasper.</p>
+          <p class = "paragraph">Pour Samara Joy, cette révélation marque le point de départ d’un parcours sans faute : après avoir décroché la bourse Ella Fitzgerald et remporté le concours Sarah Vaughan International Jazz Vocal Competition, elle se produit dans les clubs new-yorkais les plus réputés. Son premier album éponyme paraît en 2021, suivi l’année suivante par Linger Awhile. Elaboré au studio Sear de New York, son premier enregistrement pour le label Verve contient des remises à jour personnalisées de grands standards — dont « ‘Round Midnight » de Thelonious Monk, « Misty » d’Erroll Garner et « Someone To Watch Over Me » de George Gershwin. Salué par la critique et le public au lendemain de la première tournée internationale de Samara Joy, Linger Awhile remporte en 2023 le Grammy Award du Meilleur album de jazz vocal, puis celui de la meilleure performance jazz pour « Tight » l’année suivante. Digne héritière des grandes voix du passé et dotée d’un irrésistible charisme scénique, rien ne semble désormais arrêter la progression d’un des talents les plus prometteurs du jazz contemporain.</p>
+        </div>
+        <div class = "r-text-photo">
+          <div class = "img-container">
+            <img src = "../../imgs/articles-imgs/samara-joy.webp" alt = "test" class = "article-img">
+          </div>
+        </div>
+    </div>
+    <footer>
+      <div id = "footer-delimiter">
+      </div>
+      <div id = "footer-text-cont">
+        <div id = "left-footer-text">
+          <p>© disquover</p>
+          <a href = "./about.html">A Propos</a>
+        </div>
+        <p>Un projet web par <i>Thomas Picou</i> et <i>Abdel-Waheb Sakkal</i></p>
+      </div>
+    </footer>
+    <script src = "../javascript/global.js"></script>
+    <script src = "../javascript/global-json.js"></script>
+    <script src = "../javascript/template/template.js"></script>
+  </body>
+</html>

@@ -230,13 +230,11 @@ h1 {
 }
 
 .mosaique {
-  display : flex;
-  flex-direction: row;
+  display: flex;
   justify-content: center;
   align-items: center;
-  width : 100%;
-  min-height: 100px;
-  margin-bottom : 60px;
+  margin: 0;
+  gap: 50px; /* Espace de 20px entre les images */
 }
 
 .mosaique img {
@@ -244,6 +242,20 @@ h1 {
   height : var(--image-size);
   object-fit: cover;
   object-position: center;
+  max-width: 40%;
+  margin-bottom: 5%;
   border-radius: 10px;
-  margin-left: 10%;
+}
+
+.centered-space table {
+  border-collapse: collapse;
+  text-align: center;
+}
+.centered-space th, .centered-space td {
+  border: 1px solid black;
+  padding: 8px;
+}
+
+p {
+  margin-bottom: 1em;
 }
