@@ -256,6 +256,6 @@ h1 {
   padding: 8px;
 }
 
-p {
+p:not(header  p){
   margin-bottom: 1em;
 }
