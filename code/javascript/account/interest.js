@@ -4,6 +4,7 @@ const addInterestButton = document.getElementById("text-interest");
 const interestButtonContainer = document.getElementById("add-interest-container");
 const form = document.getElementById("box-row1-body");
 const notification = document.getElementById("success-notification");
+document.getElementById("edit-checkbox").setAttribute("autocomplete", "off");
 
 var editable = false;
 var colorTab = ["rgb(22, 82, 132)", "rgb(14, 117, 77)", "rgb(108, 15, 139)", "rgb(179, 23, 93)", "rgb(175, 100, 14)", "rgb(86, 77, 68)", "rgb(83, 60, 214)", "rgb(214, 60, 199)", "rgb(214, 60, 109)"];

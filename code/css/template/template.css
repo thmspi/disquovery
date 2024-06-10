@@ -259,3 +259,7 @@ h1 {
 p:not(header  p, footer p){
   margin-bottom: 1em;
 }
+
+.video {
+  border : none;
+}

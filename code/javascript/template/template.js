@@ -3,7 +3,12 @@ const dislike = document.getElementById("dislike");
 const opinion_container = document.getElementsByClassName("opinion-container")[0];
 const fav_cont = document.getElementById("fav-container");
 const fav_button = document.getElementById("fav-checkbox");
-
+document.getElementById("like").setAttribute("autocomplete", "off");
+document.getElementById("dislike").setAttribute("autocomplete", "off");
+document.getElementById("fav-checkbox").setAttribute("autocomplete", "off");
+document.getElementById("like").checked = false;
+document.getElementById("dislike").checked = false;
+document.getElementById("fav-checkbox").checked = false;;
 var disp_like = 0;
 
 like.addEventListener("click", ()=> {
