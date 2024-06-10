@@ -3,82 +3,82 @@
     {
       "name" : "luther",
       "keywords" : ["newwave", "garçon", "exit", "jeune", "artistes", "sublimes"],
-      "path" : "luther.html"
+      "path" : "art-luther.html"
     },
     {
       "name" : "baiser",
       "keywords" : ["newwave", "wallacecleaver", "wallace", "jeune", "grunt","çalavie", "album", "cauchemar"],
-      "path" : "wallacecleaver.html"
+      "path" : "art-wallacecleaver.html"
     },
     {
       "name" : "jazz",
       "keywords" : ["musique", "style", "saxophone", "guitare", "instruments","smooth melodies", "swing music", "bebop tunes", "big band", "improvisation music", "blue notes", "ragtime", "cool music", "fusion grooves", "brass sections", "jazz standards", "vocal scat", "jazz quartet", "freeform music", "bossa nova", "latin rhythms", "saxophone solos", "jazz piano", "swing era", "jazz fusion"],
-      "path" : "jazz.html"
+      "path" : "art-jazz.html"
     },
     {
       "name" : "kolaf",
       "keywords" : ["lafeve", "kosei", "newwave", "bizarre", "voix", "peinture", "albums", "rap", "errrr", "khali", "bounce", "24"],
-      "path" : "kolaf.html"
+      "path" : "art-kolaf.html"
     },
     {
       "name" : "nujabes",
       "keywords" : ["producteur", "lofi", "artistes", "jeune", "mort", "créateur", "dj", "chill"],
-      "path" : "nujabes.html"
+      "path" : "art-nujabes.html"
     },
     {
       "name" : "sour",
       "keywords" : ["albums", "pop", "disney", "oliviarodrigo", "violet", "fille", "femme", "chill", "guts"],
-      "path" : "sour.html"
+      "path" : "art-sour.html"
     },
     {
       "name" : "ziak",
       "keywords" : ["sombre", "artistes", "noir", "couteau", "ça c'est des vrais couteaux", "rap", "acteur", "couteaux", "laf"],
-      "path" : "ziak.html"
+      "path" : "art-ziak.html"
     },
     {
       "name" : "lofi",
       "keywords" : ["style", "doux", "pluie", "appaisant", "chill beats", "study beats", "relaxing music", "calm beats", "chillhop", "background music", "study music", "sleep music", "chill vibes", "ambient beats", "relax beats", "mellow beats", "chill mix", "vibe music", "relaxation beats", "downtempo", "instrumental beats", "smooth beats", "easy listening", "focus music"],
-      "path" : "lofi.html"
+      "path" : "art-lofi.html"
     },
     {
       "name" : "theweeknd",
       "keywords" : ["synthe", "artistes", "retro", "starboy", "fm", "pop", "star", "blinding light", "after hours", "dawn fm", "die for you"],
-      "path" : "theweeknd.html"
+      "path" : "art-theweeknd.html"
     },
     {
       "name" : "kendrick vs drake",
       "keywords" : ["kendrick", "drake", "dramas", "us", "americains", "américains", "anglais", "rap", "black", "conflict", "pedophile", "loverboy", "star", "bbl", "drizzy"],
-      "path" : "kvsd.html"
+      "path" : "art-kvsd.html"
     },
     {
       "name" : "damso",
       "keywords" : ["artistes", "qalf", "lithopédion", "ipséité", "batterie faible", "caravane", "rap", "booba", "macarena", "lior"],
-      "path" : "damso.html"
+      "path" : "art-damso.html"
     },
     {
       "name" : "kanye",
       "keywords" : ["excentrique", "drama", "taylor swift", "tayloswift", "yeezus", "fou", "bipolaire", "trump", "rap", "carnival"],
-      "path" : "kanye.html"
+      "path" : "art-kanye.html"
     },
     {
       "name" : "freeze rael",
       "keywords" : ["freezerael", "albums", "lmf", "nmr", "balkani", "rap", "antisémite", "lin", "ekip", "667", "lyonzon", "pétasse"],
-      "path" : "freezerael.html"
+      "path" : "art-freezerael.html"
     },
     {
       "name" : "nueveszn",
       "keywords" : ["j9ueve", "newwave", "rap", "jeune", "filles", "meuf"],
-      "path" : "j9ueve.html"
+      "path" : "art-j9ueve.html"
     },
     {
       "name" : "rounhaa",
       "keywords" : ["artistes", "jaafar", "mobius", "newwave", "classique", "music sound better with you", "msbwy", "sublime"],
-      "path" : "rounhaa.html"
+      "path" : "art-rounhaa.html"
     },
     {
       "name" : "dua lipa",
       "keywords": ["femme", "pop", "one kiss", "cramptés", "albania"],
-      "path": "dualipa.html"
+      "path": "art-dualipa.html"
     },
     {
       "name" : "favoris",
