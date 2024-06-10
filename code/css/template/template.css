@@ -256,6 +256,6 @@ h1 {
   padding: 8px;
 }
 
-p:not(header  p){
+p:not(header  p, footer p){
   margin-bottom: 1em;
 }
